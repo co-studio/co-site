@@ -1,0 +1,340 @@
+/*
+* TYPEFACES
+****************************************
+****************************************
+*/
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('./assets/fonts/HVD Fonts - BrandonText-Regular.otf') format('opentype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('./assets/fonts/HVD Fonts - BrandonText-RegularItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('./assets/fonts/HVD Fonts - BrandonText-Thin.otf') format('opentype');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('./assets/fonts/HVD Fonts - BrandonText-ThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('./assets/fonts/HVD Fonts - BrandonText-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('./assets/fonts/HVD Fonts - BrandonText-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('./assets/fonts/HVD Fonts - BrandonText-Bold.otf') format('opentype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('./assets/fonts/HVD Fonts - BrandonText-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('./assets/fonts/HVD Fonts - BrandonText-Black.otf') format('opentype');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Brandon Text';
+  src: url('./assets/fonts/HVD Fonts - BrandonText-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/*
+* GLOBAL
+****************************************
+****************************************
+*/
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  font-family: 'Brandon Text';
+  font-size: 18px;
+  color: #1A1529;
+}
+
+.navbar {
+  position: absolute;
+  padding: 0 15px;
+}
+
+.headline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  min-height: 90vh;
+  padding: 0 15px;
+}
+
+.headline {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 48px;
+}
+
+.headline-first {
+  margin-left: -170px;
+  margin-right: 15px;
+}
+
+.sub-headline {
+  text-align: center;
+  color: #A9A6B3;
+  font-size: 24px;
+}
+
+.highlight {
+  display: inline;
+  color: #5C38E3;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.highlight span {
+  width: 100%;
+  text-align: left;
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  animation: rotateWords 18s linear infinite 0s;
+}
+
+.highlight span:nth-child(2) {
+	animation-delay: 3s;
+}
+.highlight span:nth-child(3) {
+	animation-delay: 6s;
+}
+.highlight span:nth-child(4) {
+	animation-delay: 9s;
+}
+.highlight span:nth-child(5) {
+	animation-delay: 12s;
+}
+.highlight span:nth-child(6) {
+	animation-delay: 15s;
+}
+
+@keyframes rotateWords {
+    0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
+    8% { opacity: 1; height: 60px; }
+    19% { opacity: 1; height: 60px; }
+	  25% { opacity: 0; height: 60px; }
+    100% { opacity: 0; }
+}
+
+
+/*
+* BUTTONS
+****************************************
+****************************************
+*/
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 70px;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Brandon Text';
+  border: 1px solid transparent;
+}
+
+.btn-contact {
+  background: #5C38E3;
+  color: #fff;
+}
+
+.btn-clear {
+  margin-top: 10px;
+  color: #A9A6B3;
+  border-color: #A9A6B3;
+}
+
+.btn-group {
+  margin-top: auto;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+.about-sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-header {
+  margin-bottom: 0px;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #A9A6B3;
+}
+
+.about-section {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.portfolio-container,
+.contact-container,
+.footer-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.portfolio-images {
+  padding-top: 5px;
+  background: #1A1529;
+}
+
+.portfolio-img {
+  width: 100%;
+}
+
+.contact-container,
+.about-container {
+  padding: 50px 15px;
+  padding-top: 0;
+  margin-top: 50px;
+  background: #F0EFF1;
+  width: calc(100% - 30px);
+}
+
+.footer-container {
+  width: calc(100% - 40px);
+  padding: 50px 20px;
+  margin-top: 50px;
+  background: #272040;
+  color: #fff;
+}
+
+.footer-container .logo {
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 300;
+}
+
+.email {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .email {
+  color: #5C38E3;
+  font-weight: 600;
+  text-transform: uppercase;
+  float: right;
+  display: none;
+}
+
+@media screen and (min-device-width: 1200px) {
+  .app-container {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar,
+  .about-container {
+    width: calc(1024px - 30px);
+  }
+
+  .navbar .email {
+    display: block;
+  }
+
+  .headline-container {
+    min-height: 70vh;
+  }
+
+  .btn-group {
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-clear {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+
+  .about-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding: 50px 0;
+    background: #F0EFF1;
+    width: 100%;
+  }
+
+  .about-header {
+    margin: 0;
+  }
+
+  .about-sub-container {
+    width: 300px;
+  }
+
+  .portfolio-container {
+    margin-top: 50px;
+  }
+
+  .portfolio-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .portfolio-img {
+    width: 500px;
+    padding: 5px;
+  }
+
+  .contact-container {
+    margin-top: 50px;
+    padding: 50px 0;
+    background: #F0EFF1;
+    width: 100%;
+  }
+
+  .footer-links {
+    width: 50%;
+  }
+}
