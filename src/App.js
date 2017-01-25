@@ -2,12 +2,17 @@ import React, { Component } from 'react';
 
 import logo from './assets/co-logo.svg';
 import logoWhite from './assets/co-logo-white.svg';
-import impressiv from './assets/images/portfolio-impressiv.jpg';
-import budbot from './assets/images/portfolio-budbot.jpg';
-import lrn from './assets/images/portfolio-lrn.jpg';
-import datto from './assets/images/portfolio-datto.jpg';
-import resurgent from './assets/images/portfolio-resurgent.jpg';
-import kmbyoga from './assets/images/portfolio-kmbyoga.jpg';
+// import impressiv from './assets/images/portfolio-impressiv.jpg';
+// import budbot from './assets/images/portfolio-budbot.jpg';
+// import lrn from './assets/images/portfolio-lrn.jpg';
+// import datto from './assets/images/portfolio-datto.jpg';
+// import resurgent from './assets/images/portfolio-resurgent.jpg';
+// import kmbyoga from './assets/images/portfolio-kmbyoga.jpg';
+import impressiv from './assets/images/portfolio-impressiv.svg';
+import fanduel from './assets/images/portfolio-fanduel.svg';
+import lrn from './assets/images/portfolio-lrn.svg';
+import datto from './assets/images/portfolio-datto.svg';
+import kmbyoga from './assets/images/portfolio-kmbyoga.svg';
 import './App.css';
 
 class App extends Component {
@@ -61,8 +66,8 @@ class App extends Component {
             <h1 className="about-header">What</h1>
             <p className="about-section">
               We help businesses large and small  accomplish their digital goals.
-              From coding websites, apps, and bots to designing brands and
-              marketing materials, we’ve done it all.
+              <b> We design and develop a range of digital products from
+                websites, apps, and bots to brands and marketing materials.</b>
             </p>
           </div>
           <div className="about-sub-container">
@@ -75,8 +80,8 @@ class App extends Component {
           </div>
         </section>
 
-        <section className="portfolio-container">
-          <h1 className="about-header">Recent Work</h1>
+        {/* <section className="portfolio-container">
+          <h1 className="about-header">Recent Clients</h1>
           <div className="portfolio-images">
             <img className="portfolio-img" src={impressiv} alt="Impressiv" />
             <img className="portfolio-img" src={datto} alt="Datto Community" />
@@ -84,6 +89,16 @@ class App extends Component {
             <img className="portfolio-img" src={kmbyoga} alt="KMB Yoga" />
             <img className="portfolio-img" src={budbot} alt="BudBot" />
             <img className="portfolio-img" src={resurgent} alt="Resurgent" />
+          </div>
+        </section> */}
+        <section className="portfolio-container">
+          <h1 className="about-header">Recent Clients</h1>
+          <div className="portfolio-images">
+            <img className="portfolio-img" src={datto} alt="Datto" />
+            <img className="portfolio-img" src={fanduel} alt="FanDuel" />
+            <img className="portfolio-img" src={kmbyoga} alt="KMB Yoga" />
+            <img className="portfolio-img" src={impressiv} alt="Impressiv" />
+            <img className="portfolio-img" src={lrn} alt="Lrn" />
           </div>
         </section>
 
