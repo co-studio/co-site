@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 
 import logo from './assets/co-logo.svg';
 import logoWhite from './assets/co-logo-white.svg';
-// import impressiv from './assets/images/portfolio-impressiv.jpg';
-// import budbot from './assets/images/portfolio-budbot.jpg';
-// import lrn from './assets/images/portfolio-lrn.jpg';
-// import datto from './assets/images/portfolio-datto.jpg';
-// import resurgent from './assets/images/portfolio-resurgent.jpg';
-// import kmbyoga from './assets/images/portfolio-kmbyoga.jpg';
 import impressiv from './assets/images/portfolio-impressiv.svg';
 import fanduel from './assets/images/portfolio-fanduel.svg';
 import lrn from './assets/images/portfolio-lrn.svg';
 import datto from './assets/images/portfolio-datto.svg';
 import kmbyoga from './assets/images/portfolio-kmbyoga.svg';
+import brandImage from './assets/images/brand-image.png';
+import logan from './assets/images/who-logan.jpg';
+import nathan from './assets/images/who-nathan.jpg';
+import james from './assets/images/who-james.jpg';
+import devices from './assets/images/what-devices.jpg';
+import heart from './assets/images/why-heart.gif';
 import './App.css';
 
 class App extends Component {
@@ -61,6 +61,11 @@ class App extends Component {
               We are a small team of designers, developers, and entrepreneurs
               from Brooklyn, NY.
             </p>
+            <div className="about-images">
+              <img src={nathan} alt="Nathan Bernard" />
+              <img src={logan} alt="Logan Bernard" />
+              <img src={james} alt="James Staley" />
+            </div>
           </div>
           <div className="about-sub-container">
             <h1 className="about-header">What</h1>
@@ -69,30 +74,24 @@ class App extends Component {
               <b> We design and develop a range of digital products from
                 websites, apps, and bots to brands and marketing materials.</b>
             </p>
+            <img className="what-image" src={devices} alt="Device Range" />
           </div>
           <div className="about-sub-container">
             <h1 className="about-header">Why</h1>
             <p className="about-section">
-              We are passionate about helping businesses, corporations,
-              and entrepreneurs accomplish their goals. All of our digital
-              experiences are crafted with love and care.
+              Crafting digital products is our passion.
+              We hone our craft outside of business hours because it's what we love to do.
             </p>
+            <img className="why-image" src={heart} alt="<3 Products" />
           </div>
         </section>
 
-        {/* <section className="portfolio-container">
-          <h1 className="about-header">Recent Clients</h1>
-          <div className="portfolio-images">
-            <img className="portfolio-img" src={impressiv} alt="Impressiv" />
-            <img className="portfolio-img" src={datto} alt="Datto Community" />
-            <img className="portfolio-img" src={lrn} alt="Lrn" />
-            <img className="portfolio-img" src={kmbyoga} alt="KMB Yoga" />
-            <img className="portfolio-img" src={budbot} alt="BudBot" />
-            <img className="portfolio-img" src={resurgent} alt="Resurgent" />
-          </div>
-        </section> */}
         <section className="portfolio-container">
-          <h1 className="about-header">Recent Clients</h1>
+          <h1 className="about-header">You</h1>
+          <p className="about-section">
+            You might work for a corporation, a business, or be an entrepreneur.
+            Whatever your situation and needs, we've (likely) seen it before and are happy to help.
+          </p>
           <div className="portfolio-images">
             <img className="portfolio-img" src={datto} alt="Datto" />
             <img className="portfolio-img" src={fanduel} alt="FanDuel" />
@@ -111,6 +110,10 @@ class App extends Component {
           <a href="mailto:costudio.io@gmail.com" className="btn btn-contact">
             Get Started Now
           </a>
+        </section>
+
+        <section className="brand-container">
+          <img className="brand-image" src={brandImage} alt="Co Studio" />
         </section>
 
         <footer className="footer-container">

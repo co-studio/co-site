@@ -73,10 +73,11 @@
   font-size: 18px;
   color: #1A1529;
   background-image: url('./assets/images/background-tile.svg');
+  overflow-x: hidden;
 }
 
 .navbar {
-  position: absolute;
+  /*position: absolute;*/
   padding: 0 15px;
 }
 
@@ -186,7 +187,9 @@
 .about-container {
   display: flex;
   flex-direction: column;
-  padding: 0 15px;
+  padding: 0;
+  margin-top: 50px;
+  box-sizing: border-box;
 }
 
 .about-sub-container,
@@ -198,6 +201,11 @@
   min-height: 50vh;
   padding: 0 15px;
   background: #F0EFF1;
+  box-sizing: border-box;
+}
+
+.about-sub-container {
+  padding: 100px 15px;
 }
 
 .about-sub-container:nth-child(2) {
@@ -213,7 +221,28 @@
 
 .about-section {
   margin-top: 0px;
+  margin-bottom: 25px;
   text-align: center;
+}
+
+.about-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-images img {
+  max-width: 25%;
+  min-width: 75px;
+  border-radius: 100px;
+}
+
+.what-image {
+  width: 80%;
+}
+
+.why-image {
+  width: 50%;
 }
 
 .portfolio-container,
@@ -222,40 +251,38 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .portfolio-container {
   min-height: 50vh;
+  margin-top: 50px;
+  padding: 0 15px;
 }
 
 .portfolio-images {
   display: flex;
   flex-direction: column;
   padding-top: 5px;
-  /*background: #1A1529;*/
 }
 
 .portfolio-img {
-  /*width: 100%;*/
   padding: 20px 0;
 }
 
-.contact-container,
-.about-container {
-  margin: 50px 0;
-  /*background: #F0EFF1;*/
-  /*width: calc(100% - 30px);*/
+.brand-image {
   width: 100%;
+  display: block;
 }
 
 .contact-container {
-  margin-bottom: 0;
+  margin-top: 50px;
+  width: 100%;
 }
 
 .footer-container {
-  width: calc(100% - 40px);
+  width: 100%;
   padding: 50px 20px;
-  /*margin-top: 50px;*/
   background: #272040;
   color: #fff;
 }
@@ -319,7 +346,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 50px 0;
     padding: 0;
     width: 100%;
   }
@@ -329,16 +355,29 @@
   }
 
   .about-section {
-    width: 500px;
+    width: 600px;
+    font-size: 24px;
   }
 
   .about-sub-container {
-    min-width: 100vw;
+    width: 100%;
   }
+
+  .about-images img {
+    width: 200px;
+  }
+
+  .what-image {
+    width: 500px;
+  }
+
+  .why-image {
+    width: 250px;
+  }
+
 
   .portfolio-container {
     justify-content: center;
-    /*margin-top: 50px;*/
   }
 
   .portfolio-images {
@@ -348,11 +387,6 @@
     align-items: center;
     flex-direction: row;
     width: 500px;
-  }
-
-  .portfolio-img {
-    /*width: 500px;
-    padding: 5px;*/
   }
 
   .contact-container {
