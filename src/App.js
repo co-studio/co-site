@@ -31,12 +31,12 @@ class App extends Component {
           <h1 className="headline">
             <span className="headline-first">What</span>
             <div className="highlight">
-              <span>design</span>
-              <span>code</span>
               <span>app</span>
+              <span>design</span>
               <span>website</span>
-              <span>bot</span>
+              <span>code</span>
               <span>logo</span>
+              <span>bot</span>
             </div>
             <br/>
             do you need?
@@ -111,10 +111,10 @@ class App extends Component {
             Get Started Now
           </a>
         </section>
-
+{/*
         <section className="brand-container">
           <img className="brand-image" src={brandImage} alt="Co Studio" />
-        </section>
+        </section> */}
 
         <footer className="footer-container">
           <a href="#headline">
