@@ -7,12 +7,12 @@ import fanduel from './assets/images/portfolio-fanduel.svg';
 import lrn from './assets/images/portfolio-lrn.svg';
 import datto from './assets/images/portfolio-datto.svg';
 import kmbyoga from './assets/images/portfolio-kmbyoga.svg';
-import brandImage from './assets/images/brand-image.png';
 import logan from './assets/images/who-logan.jpg';
 import nathan from './assets/images/who-nathan.jpg';
 import james from './assets/images/who-james.jpg';
 import devices from './assets/images/what-devices.jpg';
 import heart from './assets/images/why-heart.gif';
+// import brandImage from './assets/images/brand-image.png';
 import './App.css';
 
 class App extends Component {

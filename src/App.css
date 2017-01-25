@@ -4,59 +4,9 @@
 ****************************************
 */
 @font-face {
-  font-family: 'Brandon Text';
-  src: url('./assets/fonts/HVD Fonts - BrandonText-Regular.otf') format('opentype');
+  font-family: 'Brandon_Text';
+  src: url('./assets/fonts/BrandonText-Regular.ttf') format('truetype');
   font-weight: 300;
-}
-@font-face {
-  font-family: 'Brandon Text';
-  src: url('./assets/fonts/HVD Fonts - BrandonText-RegularItalic.otf') format('opentype');
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Brandon Text';
-  src: url('./assets/fonts/HVD Fonts - BrandonText-Thin.otf') format('opentype');
-  font-weight: 100;
-}
-@font-face {
-  font-family: 'Brandon Text';
-  src: url('./assets/fonts/HVD Fonts - BrandonText-ThinItalic.otf') format('opentype');
-  font-weight: 100;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Brandon Text';
-  src: url('./assets/fonts/HVD Fonts - BrandonText-Medium.otf') format('opentype');
-  font-weight: 500;
-}
-@font-face {
-  font-family: 'Brandon Text';
-  src: url('./assets/fonts/HVD Fonts - BrandonText-MediumItalic.otf') format('opentype');
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Brandon Text';
-  src: url('./assets/fonts/HVD Fonts - BrandonText-Bold.otf') format('opentype');
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'Brandon Text';
-  src: url('./assets/fonts/HVD Fonts - BrandonText-BoldItalic.otf') format('opentype');
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Brandon Text';
-  src: url('./assets/fonts/HVD Fonts - BrandonText-Black.otf') format('opentype');
-  font-weight: 900;
-}
-@font-face {
-  font-family: 'Brandon Text';
-  src: url('./assets/fonts/HVD Fonts - BrandonText-BlackItalic.otf') format('opentype');
-  font-weight: 900;
-  font-style: italic;
 }
 
 /*
@@ -69,7 +19,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-  font-family: 'Brandon Text', sans-serif;
+  font-family: 'Brandon_Text', sans-serif;
   font-size: 18px;
   color: #1A1529;
   background-image: url('./assets/images/background-tile.svg');
@@ -164,7 +114,7 @@
   border-radius: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Brandon Text';
+  font-family: 'Brandon_Text';
   border: 1px solid transparent;
 }
 
@@ -374,7 +324,6 @@
   .why-image {
     width: 250px;
   }
-
 
   .portfolio-container {
     justify-content: center;
