@@ -270,7 +270,7 @@
 
   .navbar,
   .about-container {
-    width: calc(1024px - 30px);
+    width: 896px;
   }
 
   .navbar .email {
