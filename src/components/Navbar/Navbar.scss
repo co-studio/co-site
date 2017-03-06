@@ -1,0 +1,24 @@
+@import '../../variables.scss';
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  padding: $padding-1 $padding-2;
+
+  .nav-item {
+    padding: $padding-1 / 2;
+    color: $white;
+    font-weight: 300;
+    font-size: $font-size-label;
+    text-transform: uppercase;
+    text-decoration: none;
+    float: right;
+    transition: $hover-transition;
+    border-radius: $border-radius;
+
+    &:hover {
+      background: $gray-8;
+    }
+  }
+}

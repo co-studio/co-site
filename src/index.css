@@ -1,5 +1,177 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Book.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Medium.ttf") format("truetype");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Light.ttf") format("truetype");
+  font-weight: 100; }
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Brandon_Text', sans-serif;
-}
+  font-family: 'Gotham', serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #1a1529;
+  line-height: 1.3; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Book.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Medium.ttf") format("truetype");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Light.ttf") format("truetype");
+  font-weight: 100; }
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 25px 50px; }
+
+.navbar .nav-item {
+  padding: 12.5px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  float: right;
+  transition: all 0.15s cubic-bezier(0, 0, 0.7, 1);
+  border-radius: 2px; }
+
+.navbar .nav-item:hover {
+  background: #938f9f; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Book.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Medium.ttf") format("truetype");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Light.ttf") format("truetype");
+  font-weight: 100; }
+
+.headline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  min-height: 700px;
+  width: 100%;
+  padding: 0 15px;
+  background-image: url("./assets/images/cover-nyc.jpg");
+  background-size: cover;
+  background-position: bottom; }
+
+.headline {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 300; }
+
+.headline-first {
+  margin-left: -170px;
+  margin-right: 15px; }
+
+.sub-headline {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 100; }
+
+.btn-group {
+  margin-top: initial;
+  margin-bottom: auto; }
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 70px;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Gotham';
+  border: 1px solid transparent;
+  transition: all 0.15s cubic-bezier(0, 0, 0.7, 1); }
+
+.btn:hover {
+  box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.3); }
+
+.btn-purple {
+  background: #5c38e3;
+  color: #fff; }
+
+.btn-purple:hover {
+  background: #512be1; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Book.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Medium.ttf") format("truetype");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Light.ttf") format("truetype");
+  font-weight: 100; }
+
+.icon-list-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%; }
+
+.list-shortener {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 1024px; }
+
+.icon-list {
+  display: flex;
+  box-sizing: border-box;
+  padding: 25px 0;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: horizontalTicker;
+  animation-duration: 60s; }
+
+.icon-list-item {
+  margin: 0 25px; }
+
+@keyframes horizontalTicker {
+  0% {
+    transform: translateX(-1400px); }
+  100% {
+    transform: translateX(1400px); } }

@@ -1,58 +1,43 @@
 import React, { Component } from 'react';
 
-import logo from './assets/co-logo.svg';
 import logoWhite from './assets/co-logo-white.svg';
-import impressiv from './assets/images/portfolio-impressiv.svg';
-import fanduel from './assets/images/portfolio-fanduel.svg';
-import lrn from './assets/images/portfolio-lrn.svg';
-import datto from './assets/images/portfolio-datto.svg';
-import kmbyoga from './assets/images/portfolio-kmbyoga.svg';
+// import impressiv from './assets/images/portfolio-impressiv.svg';
+// import fanduel from './assets/images/portfolio-fanduel.svg';
+// import lrn from './assets/images/portfolio-lrn.svg';
+// import datto from './assets/images/portfolio-datto.svg';
+// import kmbyoga from './assets/images/portfolio-kmbyoga.svg';
 import logan from './assets/images/who-logan.jpg';
 import nathan from './assets/images/who-nathan.jpg';
 import james from './assets/images/who-james.jpg';
 import devices from './assets/images/what-devices.jpg';
 import heart from './assets/images/why-heart.gif';
+
+import bg from './assets/images/press/press-boston-globe.svg';
+import bi from './assets/images/press/press-business-insider.svg';
+import gizmodo from './assets/images/press/press-gizmodo.svg';
+import hp from './assets/images/press/press-huffington-post.svg';
+import lifehacker from './assets/images/press/press-lifehacker.svg';
+import mashable from './assets/images/press/press-mashable.svg';
+import politico from './assets/images/press/press-politico.svg';
+import guardian from './assets/images/press/press-the-guardian.svg';
+import tnw from './assets/images/press/press-tnw.svg';
+import vice from './assets/images/press/press-vice.svg';
 // import brandImage from './assets/images/brand-image.png';
 import './App.css';
+import Navbar from './components/Navbar/Navbar'
+import Hero from './components/Hero/Hero'
+import IconList from './components/IconList/IconList'
 
 class App extends Component {
   render() {
     return (
       <div className="app-container">
 
-        <nav id="headline" className="navbar">
-          <img src={logo} className="logo" alt="Co" />
-          <a href="mailto:costudio.io@gmail.com" className="email">
-            Contact Us
-          </a>
-        </nav>
+        <Navbar />
+        <Hero />
+        <IconList icons={[ bg, bi, gizmodo, hp, lifehacker, mashable, politico, guardian, tnw, vice ]}
+                  background="#c9c7ce"/>
 
-        <section className="headline-container">
-          <h1 className="headline">
-            <span className="headline-first">What</span>
-            <div className="highlight">
-              <span>app</span>
-              <span>design</span>
-              <span>website</span>
-              <span>code</span>
-              <span>logo</span>
-              <span>bot</span>
-            </div>
-            <br/>
-            do you need?
-          </h1>
-          <p className="sub-headline">
-            We can help you with that.
-          </p>
-          <div className="btn-group">
-            <a href="mailto:costudio.io@gmail.com" className="btn btn-contact">
-              Let's Get Started
-            </a>
-            <a href="#about" className="btn btn-clear">
-              Learn More
-            </a>
-          </div>
-        </section>
 
         <section id="about" className="about-container">
           <div className="about-sub-container">
@@ -93,11 +78,11 @@ class App extends Component {
             Whatever your situation and needs, we've (likely) seen it before and are happy to help.
           </p>
           <div className="portfolio-images">
-            <img className="portfolio-img" src={datto} alt="Datto" />
+            {/* <img className="portfolio-img" src={datto} alt="Datto" />
             <img className="portfolio-img" src={fanduel} alt="FanDuel" />
             <img className="portfolio-img" src={kmbyoga} alt="KMB Yoga" />
             <img className="portfolio-img" src={impressiv} alt="Impressiv" />
-            <img className="portfolio-img" src={lrn} alt="Lrn" />
+            <img className="portfolio-img" src={lrn} alt="Lrn" /> */}
           </div>
         </section>
 

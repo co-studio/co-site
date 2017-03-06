@@ -1,0 +1,33 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 70px;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Gotham';
+  border: 1px solid transparent;
+  transition: $hover-transition;
+
+  &:hover {
+    box-shadow: $btn-shadow;
+  }
+}
+
+.btn-purple {
+  background: $purple;
+  color: $white;
+
+  &:hover {
+    background: darken($purple, 3%);
+  }
+}
+//
+// .btn-clear {
+//   margin-top: 10px;
+//   color: #A9A6B3;
+//   background: #fff;
+//   border-color: #A9A6B3;
+// }

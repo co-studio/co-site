@@ -1,0 +1,28 @@
+@import './variables.scss';
+
+//
+// Global Styles
+// ==================================================
+// ==================================================
+//
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gotham', serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: $black;
+  line-height: 1.3;
+}
+
+//
+// Components
+// ==================================================
+// ==================================================
+//
+
+@import './components/Navbar/Navbar.scss';
+@import './components/Hero/Hero.scss';
+@import './components/Button/Button.scss';
+@import './components/IconList/IconList.scss';
