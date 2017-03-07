@@ -1,0 +1,70 @@
+@import '../../variables.scss';
+
+//
+// Containers
+// ==================================================
+// ==================================================
+//
+
+.footer-container {
+  width: 100%;
+  background: linear-gradient(0deg, $black, $black-purple-2);
+  color: $gray-7;
+  font-weight: 300;
+  font-size: $font-size-label;
+}
+
+.footer-background {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: $padding-3 $padding-1;
+  background-image: url('./assets/images/background-tile.svg');
+}
+
+.footer-links {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  padding: 0 $padding-2;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+//
+// Text and Objects
+// ==================================================
+// ==================================================
+//
+.footer-logo {
+  margin-bottom: 10px;
+}
+
+.footer-email {
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: $gray-7;
+  transition: $hover-transition;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.footer-btn-label {
+  // text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: $font-size-label;
+  font-weight: 100;
+}
+
+.footer-location {
+  padding-left: 10px;
+}

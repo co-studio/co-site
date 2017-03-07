@@ -4,21 +4,22 @@ import Button from '../Button/Button';
 
 class Hero extends Component {
   render() {
+    const { headline, children, btnText, background } = this.props
+
     return (
-      <section className="headline-container">
+      <section className={`headline-container headline-container-${background}`}>
         <h1 className="headline">
-          Bring bots to your business
+          {headline}
         </h1>
 
         <p className="sub-headline">
-          Bring your idea to life or streamline operations with an MVP. <br />
-        All it takes is <b>1 month and $10,000</b>.
+          {children}
         </p>
 
         <div className="btn-group">
-          <Button href="mailto:costudio.io@gmail.com"
+          <Button href="mailto:costudio.io@gmail.com?subject=Bots for my Business"
                   color="purple">
-            Get in touch
+            {btnText}
           </Button>
         </div>
       </section>

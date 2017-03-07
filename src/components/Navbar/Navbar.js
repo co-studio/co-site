@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 import logoWhite from '../../assets/co-logo-white.svg';
 
@@ -18,7 +18,7 @@ class Navbar extends Component {
           About
         </a>
 
-        <a href="/about" className="nav-item">
+        <a href="/#1. Exploration" className="nav-item">
           Our Work
         </a>
       </nav>

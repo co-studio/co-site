@@ -1,0 +1,63 @@
+@import '../../variables.scss';
+
+//
+// Containers
+// ==================================================
+// ==================================================
+//
+
+.about-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: $padding-2;
+  color: $black;
+}
+
+.about-founders {
+  display: flex;
+  justify-content: center;
+}
+
+.about-person {
+  display: flex;
+  width: 35%;
+  padding: 0 $padding-1;
+  box-sizing: border-box;
+}
+
+.about-story-container {
+
+}
+
+//
+// Text and Objects
+// ==================================================
+// ==================================================
+//
+
+.about-header {
+  align-self: center;
+  margin: $padding-2 0;
+  text-transform: uppercase;
+  color: $gray-7;
+  font-weight: 600;
+  border-bottom: 4px solid $gray-7;
+}
+
+.about-name,
+.about-blurb {
+  margin: 0;
+}
+
+.about-person-image {
+  margin-right: $padding-1 / 2;
+}
+
+.about-header-story {
+  margin-top: $padding-4;
+}
+
+.about-story {
+
+}

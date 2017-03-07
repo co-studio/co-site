@@ -14,6 +14,15 @@ body {
   font-weight: 300;
   color: $black;
   line-height: 1.3;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: lighten($purple, 30%); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: lighten($purple, 30%); /* Gecko Browsers */
 }
 
 //
@@ -23,6 +32,9 @@ body {
 //
 
 @import './components/Navbar/Navbar.scss';
+@import './components/Footer/Footer.scss';
 @import './components/Hero/Hero.scss';
 @import './components/Button/Button.scss';
 @import './components/IconList/IconList.scss';
+@import './components/ContentSection/ContentSection.scss';
+@import './pages/About/About.scss';
