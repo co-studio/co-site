@@ -1,3 +1,14 @@
+@import '../components/Navbar/Navbar.scss';
+@import '../components/Footer/Footer.scss';
+@import '../components/Hero/Hero.scss';
+@import '../components/Button/Button.scss';
+@import '../components/IconList/IconList.scss';
+@import '../components/ContentSection/ContentSection.scss';
+
+@import '../pages/About/About.scss';
+@import '../pages/Process/Process.scss';
+@import '../pages/Landing/Landing.scss';
+
 // small screen size (sm)
 @media (max-width: 768px) {
   @include navbar-sm();
