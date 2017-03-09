@@ -1,4 +1,4 @@
-@import './index.scss';
+@import './variables.scss';
 
 .app-container {
   display: flex;
@@ -36,4 +36,15 @@
   margin-bottom: $padding-2;
   text-align: center;
   font-size: $font-size-subheader;
+}
+
+@mixin offer-sm() {
+  .landing-offer {
+    padding: $padding-2 $padding-1;
+  }
+
+  .illustration-offer {
+    max-height: 200vh;
+    width: 100%;
+  }
 }

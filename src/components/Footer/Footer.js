@@ -7,7 +7,7 @@ class Footer extends Component {
   render() {
     return(
       <footer className="footer-container">
-        <div className="footer-background">
+        {/* <div className="footer-background"> */}
           <div className="footer-links">
             <div className="footer-left">
               <a href="#navbar">
@@ -30,7 +30,7 @@ class Footer extends Component {
                 Get in touch
               </Button>
             </div>
-          </div>
+          {/* </div> */}
         </div>
       </footer>
     )

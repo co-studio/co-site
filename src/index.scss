@@ -31,6 +31,7 @@ body {
 // ==================================================
 //
 
+@import './App.scss';
 @import './components/Navbar/Navbar.scss';
 @import './components/Footer/Footer.scss';
 @import './components/Hero/Hero.scss';
@@ -38,3 +39,5 @@ body {
 @import './components/IconList/IconList.scss';
 @import './components/ContentSection/ContentSection.scss';
 @import './pages/About/About.scss';
+
+@import './styles/media-queries.scss';

@@ -85,3 +85,20 @@
 .content-section-deliverable-dark {
   color: $white;
 }
+
+@mixin contentSection-sm() {
+  .content-section-container {
+    flex-direction: column;
+    padding: $padding-2 $padding-1;
+  }
+
+  .content-section-text-container,
+  .content-section-image-container {
+    padding: $padding-1 0;
+    width: 100%;
+  }
+
+  .content-section-image {
+    width: 100%;
+  }
+}

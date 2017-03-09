@@ -1,6 +1,7 @@
 @import '../../variables.scss';
 
 .headline-container {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,4 +46,10 @@
 .btn-group {
   margin-top: initial;
   margin-bottom: auto;
+}
+
+@mixin hero-sm() {
+  .headline-container {
+    padding: 0 $padding-1;
+  }
 }

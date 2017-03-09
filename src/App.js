@@ -17,6 +17,7 @@ import design from './assets/images/illustrations/process-illustration-design.sv
 import development from './assets/images/illustrations/process-illustration-development.svg'
 import growth from './assets/images/illustrations/process-illustration-growth.svg'
 import offer from './assets/images/illustrations/illustration-offer.svg'
+import offerVertical from './assets/images/illustrations/illustration-offer-vertical.svg'
 // Components
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
@@ -27,7 +28,28 @@ import ContentSection from './components/ContentSection/ContentSection'
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      windowWidth: null
+    }
+  }
+
+  componentDidMount() {
+    this.setState({
+      windowWidth: window.innerWidth
+    })
+  }
+
   render() {
+    const offerImage = (this.state.windowWidth > 768)
+      ? offer
+      : offerVertical
+
+    const imageLocation = (this.state.windowWidth > 768)
+      ? 'left'
+      : 'right'
+
     return (
       <div className="app-container">
         <Navbar />
@@ -44,7 +66,7 @@ class App extends Component {
 
                 <section className="landing-offer">
                   <img className="illustration-offer"
-                    src={offer} />
+                    src={offerImage} />
 
                   <h2 className="landing-offer-header">
                     Our offer is simple
@@ -63,7 +85,7 @@ class App extends Component {
                 </section>
 
         <ContentSection background="dark"
-                        textPosition="left"
+                        textPosition={imageLocation}
                         title="1. Exploration"
                         header="What's your business or idea?"
                         body="To start, we research your business and identify areas that chatbots can improve your operations. We find ways to cut costs and impact your business."
@@ -79,7 +101,7 @@ class App extends Component {
                         image={design} />
 
         <ContentSection background="dark"
-                        textPosition="left"
+                        textPosition={imageLocation}
                         title="3. Development"
                         header="What experience is right for you?"
                         body="We collaborate with you to design a chatbot experience that grows your bottom line. This is when goals are set and features are defined."

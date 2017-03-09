@@ -32,3 +32,13 @@
   0% { transform: translateX(-1400px);  }
   100% { transform: translateX(1400px); }
 }
+
+@mixin iconList-sm() {
+  .list-shortener {
+    width: 100%;
+  }
+
+  .icon-list {
+    animation-duration: 45s;
+  }
+}

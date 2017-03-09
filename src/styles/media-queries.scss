@@ -1,0 +1,14 @@
+// small screen size (sm)
+@media (max-width: 768px) {
+  @include navbar-sm();
+  @include iconList-sm();
+  @include hero-sm();
+  @include offer-sm();
+  @include contentSection-sm();
+  @include footer-sm();
+  @include about-sm();
+}
+
+// medium screen size (md)
+@media (max-width: 1024px) {
+}

@@ -45,13 +45,61 @@ body {
   src: url("./assets/fonts/Gotham-Light.ttf") format("truetype");
   font-weight: 100; }
 
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden; }
+
+.landing-offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+  padding-top: 25px; }
+
+.illustration-offer {
+  width: 70%; }
+
+.landing-offer-header {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #a9a6b3;
+  border-bottom: 4px solid #a9a6b3;
+  text-transform: uppercase; }
+
+.landing-offer-body {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 24px; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Book.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Medium.ttf") format("truetype");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Light.ttf") format("truetype");
+  font-weight: 100; }
+
 .navbar {
   position: absolute;
   width: 100%;
   box-sizing: border-box;
-  padding: 25px 50px; }
+  padding: 25px 50px;
+  z-index: 101; }
 
-.navbar .nav-item {
+.nav-item,
+.nav-mobile-item {
   padding: 12.5px;
   color: #fff;
   font-weight: 300;
@@ -62,8 +110,13 @@ body {
   transition: all 0.15s cubic-bezier(0, 0, 0.7, 1);
   border-radius: 2px; }
 
-.navbar .nav-item:hover {
+.nav-item:hover,
+.nav-mobile-item:hover {
   background: #938f9f; }
+
+.nav-menu,
+.nav-mobile {
+  display: none; }
 
 @font-face {
   font-family: 'Gotham';
@@ -81,32 +134,31 @@ body {
   font-weight: 100; }
 
 .footer-container {
-  width: 100%;
-  background: linear-gradient(0deg, #1a1529, #4F4374);
-  color: #a9a6b3;
-  font-weight: 300;
-  font-size: 14px; }
-
-.footer-background {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 100px 25px;
-  background-image: url("./assets/images/background-tile.svg"); }
+  background-color: #4F4374;
+  background: url("./assets/images/background-tile.svg"), linear-gradient(0deg, #1a1529, #4F4374);
+  color: #a9a6b3;
+  font-weight: 300;
+  font-size: 14px; }
 
 .footer-links {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   width: 70%;
-  padding: 0 50px; }
+  padding: 100px 25px; }
 
 .footer-left,
 .footer-right {
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
+
+.footer-right {
+  align-self: flex-end; }
 
 .footer-logo {
   margin-bottom: 10px; }
@@ -122,8 +174,7 @@ body {
 
 .footer-btn-label {
   margin-bottom: 5px;
-  font-size: 14px;
-  font-weight: 100; }
+  font-size: 14px; }
 
 .footer-location {
   padding-left: 10px; }
@@ -144,6 +195,7 @@ body {
   font-weight: 100; }
 
 .headline-container {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -370,10 +422,10 @@ body {
   justify-content: center; }
 
 .about-person {
+  box-sizing: border-box;
   display: flex;
   width: 35%;
-  padding: 0 25px;
-  box-sizing: border-box; }
+  padding: 0 25px; }
 
 .about-header {
   align-self: center;
@@ -392,3 +444,87 @@ body {
 
 .about-header-story {
   margin-top: 150px; }
+
+@media (max-width: 768px) {
+  .navbar,
+  .nav-mobile {
+    padding: 25px; }
+  .nav-item {
+    display: none; }
+  .nav-menu {
+    display: inline-block;
+    float: right;
+    align-self: flex-end; }
+  .nav-menu-icon {
+    height: 32px; }
+  .nav-mobile {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: #4F4374;
+    background: url("./assets/images/background-tile.svg"), linear-gradient(0deg, #4F4374, #272040);
+    transition: all 0.25s cubic-bezier(0, 0, 0.7, 1);
+    z-index: 100; }
+  .nav-mobile-open-true {
+    transform: translateX(-100%); }
+  .nav-mobile-items {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 50px 25px;
+    text-align: center; }
+  .nav-mobile-item {
+    font-size: 24px; }
+  .list-shortener {
+    width: 100%; }
+  .icon-list {
+    animation-duration: 45s; }
+  .headline-container {
+    padding: 0 25px; }
+  .landing-offer {
+    padding: 50px 25px; }
+  .illustration-offer {
+    max-height: 200vh;
+    width: 100%; }
+  .content-section-container {
+    flex-direction: column;
+    padding: 50px 25px; }
+  .content-section-text-container,
+  .content-section-image-container {
+    padding: 25px 0;
+    width: 100%; }
+  .content-section-image {
+    width: 100%; }
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; }
+  .footer-left {
+    order: 2;
+    margin-top: 150px; }
+  .footer-right {
+    align-self: center; }
+  .about-founders {
+    flex-direction: column; }
+  .about-person {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 25px; }
+  .about-person:nth-child(2) {
+    margin-top: 50px; }
+  .about-person-image {
+    width: 75%;
+    margin-right: 0;
+    margin-bottom: 25px;
+    border-radius: 500px; }
+  .about-name,
+  .about-blurb {
+    text-align: center; } }
