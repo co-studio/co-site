@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { Link } from 'react-router'
 
-import logoWhite from '../../assets/co-logo-white.svg';
-import iconHamburger from '../../assets/icons/icon-hamburger.svg';
-import iconClose from '../../assets/icons/icon-close.svg';
+import logoWhite from '../../assets/co-logo-white.svg'
+import iconHamburger from '../../assets/icons/icon-hamburger.svg'
+import iconClose from '../../assets/icons/icon-close.svg'
 
 class Navbar extends Component {
   constructor(props) {
@@ -23,46 +24,58 @@ class Navbar extends Component {
   render() {
     return (
       <nav id="navbar" className="navbar">
-        <a href="/">
-          <img src={logoWhite} className="logo" alt="Co" />
-        </a>
+        <Link to="/">
+          <img src={logoWhite} className="logo" alt="Co Studio" />
+        </Link>
 
         <a href="mailto:costudio.io@gmail.com"
            className="nav-item">
           Contact Us
         </a>
 
-        <a href="/about"
-           className="nav-item">
+        <Link to="/about"
+              className="nav-item">
           About
-        </a>
+        </Link>
 
-        <a href="/"
-           className="nav-item">
-          Our Work
-        </a>
+        <Link to="/process"
+              className="nav-item">
+          Process
+        </Link>
+
+        <Link to="/"
+              className="nav-item">
+          Our Offer
+        </Link>
 
         <i className="nav-menu" onClick={this.toggleMobileMenu}>
           <img className="nav-menu-icon"
-               src={iconHamburger} />
+               src={iconHamburger}
+               alt="menu" />
          </i>
 
         <nav className={`nav-mobile nav-mobile-open-${this.state.menuOpen}`}>
           <i className="nav-menu" onClick={this.toggleMobileMenu}>
             <img className="nav-menu-icon"
-                 src={iconClose} />
+                 src={iconClose}
+                 alt="Close" />
            </i>
 
           <div className="nav-mobile-items" onClick={this.toggleMobileMenu}>
-            <a href="/"
-              className="nav-mobile-item">
-              Our Work
-            </a>
+            <Link to="/"
+                  className="nav-mobile-item">
+              Our Offer
+            </Link>
 
-            <a href="/about"
-              className="nav-mobile-item">
+            <Link to="/process"
+                  className="nav-mobile-item">
+              Process
+            </Link>
+
+            <Link to="/about"
+                  className="nav-mobile-item">
               About
-            </a>
+            </Link>
 
             <a href="mailto:costudio.io@gmail.com"
               className="nav-mobile-item">

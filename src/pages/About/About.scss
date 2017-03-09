@@ -7,6 +7,7 @@
 //
 
 .about-body {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -27,7 +28,8 @@
 }
 
 .about-story-container {
-
+  display: flex;
+  justify-content: center;
 }
 
 //
@@ -56,10 +58,15 @@
 
 .about-header-story {
   margin-top: $padding-4;
+  margin-bottom: $padding-1;
 }
 
 .about-story {
-
+  box-sizing: border-box;
+  width: 70%;
+  padding: 0 $padding-1;
+  margin-top: 0;
+  margin-bottom: $padding-2;
 }
 
 @mixin about-sm() {
@@ -87,5 +94,10 @@
   .about-name,
   .about-blurb {
     text-align: center;
+  }
+
+  .about-story {
+    width: 100%;
+    padding: 0;
   }
 }

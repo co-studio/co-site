@@ -41,6 +41,7 @@
 .content-section-deliverable-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: $padding-1;
 }
 
 //
@@ -96,6 +97,20 @@
   .content-section-image-container {
     padding: $padding-1 0;
     width: 100%;
+  }
+
+  .content-section-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .content-section-title {
+    align-self: flex-start;
+  }
+
+  .content-section-header {
+    margin-top: $padding-1;
   }
 
   .content-section-image {

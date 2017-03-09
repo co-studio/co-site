@@ -26,10 +26,10 @@
     background: darken($purple, 3%);
   }
 }
-//
-// .btn-clear {
-//   margin-top: 10px;
-//   color: #A9A6B3;
-//   background: #fff;
-//   border-color: #A9A6B3;
-// }
+
+@mixin button-sm() {
+  .btn,
+  .btn-group {
+    width: 100%;
+  }
+}

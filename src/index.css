@@ -45,52 +45,6 @@ body {
   src: url("./assets/fonts/Gotham-Light.ttf") format("truetype");
   font-weight: 100; }
 
-.app-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-x: hidden; }
-
-.landing-offer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 100px 50px;
-  padding-top: 25px; }
-
-.illustration-offer {
-  width: 70%; }
-
-.landing-offer-header {
-  margin: 0;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 600;
-  color: #a9a6b3;
-  border-bottom: 4px solid #a9a6b3;
-  text-transform: uppercase; }
-
-.landing-offer-body {
-  margin-top: 25px;
-  margin-bottom: 50px;
-  text-align: center;
-  font-size: 24px; }
-
-@font-face {
-  font-family: 'Gotham';
-  src: url("./assets/fonts/Gotham-Book.ttf") format("truetype");
-  font-weight: 300; }
-
-@font-face {
-  font-family: 'Gotham';
-  src: url("./assets/fonts/Gotham-Medium.ttf") format("truetype");
-  font-weight: 600; }
-
-@font-face {
-  font-family: 'Gotham';
-  src: url("./assets/fonts/Gotham-Light.ttf") format("truetype");
-  font-weight: 100; }
-
 .navbar {
   position: absolute;
   width: 100%;
@@ -203,13 +157,16 @@ body {
   min-height: 700px;
   width: 100%;
   padding: 0 15px;
-  background-image: url("./assets/images/cover-nyc.jpg");
+  background-image: url("./assets/images/covers/cover-nyc.jpg");
   background-size: cover;
   background-position: bottom; }
 
 .headline-container-about {
-  background-image: url("./assets/images/cover-about.jpg");
-  background-size: cover;
+  background-image: url("./assets/images/covers/cover-about.jpg");
+  background-position: center; }
+
+.headline-container-process {
+  background-image: url("./assets/images/covers/cover-process.jpg");
   background-position: center; }
 
 .headline {
@@ -363,7 +320,8 @@ body {
 
 .content-section-deliverable-container {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 25px; }
 
 .content-section-label {
   text-transform: uppercase;
@@ -411,6 +369,7 @@ body {
   font-weight: 100; }
 
 .about-body {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -426,6 +385,10 @@ body {
   display: flex;
   width: 35%;
   padding: 0 25px; }
+
+.about-story-container {
+  display: flex;
+  justify-content: center; }
 
 .about-header {
   align-self: center;
@@ -443,7 +406,107 @@ body {
   margin-right: 12.5px; }
 
 .about-header-story {
-  margin-top: 150px; }
+  margin-top: 150px;
+  margin-bottom: 25px; }
+
+.about-story {
+  box-sizing: border-box;
+  width: 70%;
+  padding: 0 25px;
+  margin-top: 0;
+  margin-bottom: 50px; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Book.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Medium.ttf") format("truetype");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Light.ttf") format("truetype");
+  font-weight: 100; }
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden; }
+
+.landing-offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+  padding-top: 25px; }
+
+.illustration-offer {
+  width: 70%; }
+
+.landing-offer-header {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #a9a6b3;
+  border-bottom: 4px solid #a9a6b3;
+  text-transform: uppercase; }
+
+.landing-offer-body {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 24px; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Book.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Medium.ttf") format("truetype");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Light.ttf") format("truetype");
+  font-weight: 100; }
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden; }
+
+.landing-offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+  padding-top: 25px; }
+
+.illustration-offer {
+  width: 70%; }
+
+.landing-offer-header {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #a9a6b3;
+  border-bottom: 4px solid #a9a6b3;
+  text-transform: uppercase; }
+
+.landing-offer-body {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 24px; }
 
 @media (max-width: 768px) {
   .navbar,
@@ -499,6 +562,14 @@ body {
   .content-section-image-container {
     padding: 25px 0;
     width: 100%; }
+  .content-section-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .content-section-title {
+    align-self: flex-start; }
+  .content-section-header {
+    margin-top: 25px; }
   .content-section-image {
     width: 100%; }
   .footer-links {
@@ -527,4 +598,10 @@ body {
     border-radius: 500px; }
   .about-name,
   .about-blurb {
-    text-align: center; } }
+    text-align: center; }
+  .about-story {
+    width: 100%;
+    padding: 0; }
+  .btn,
+  .btn-group {
+    width: 100%; } }

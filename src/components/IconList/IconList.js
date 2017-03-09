@@ -10,6 +10,7 @@ class IconList extends Component {
     return (
       <img className="icon-list-item"
            src={icon}
+           alt={icon}
            key={index} />
     )
   }

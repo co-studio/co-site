@@ -9,14 +9,18 @@
   min-height: 700px;
   width: 100%;
   padding: 0 15px;
-  background-image: url('./assets/images/cover-nyc.jpg');
+  background-image: url('./assets/images/covers/cover-nyc.jpg');
   background-size: cover;
   background-position: bottom;
 }
 
 .headline-container-about {
-  background-image: url('./assets/images/cover-about.jpg');
-  background-size: cover;
+  background-image: url('./assets/images/covers/cover-about.jpg');
+  background-position: center;
+}
+
+.headline-container-process {
+  background-image: url('./assets/images/covers/cover-process.jpg');
   background-position: center;
 }
 

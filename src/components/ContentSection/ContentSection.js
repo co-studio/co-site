@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
 
+import Button from '../Button/Button'
+
 class ContentSection extends Component {
   constructor(props) {
     super(props)
     this.renderImage = this.renderImage.bind(this)
+    this.renderDeliverable = this.renderDeliverable.bind(this)
+    this.renderDeliverable = this.renderDeliverable.bind(this)
   }
 
   renderImage() {
@@ -17,11 +21,35 @@ class ContentSection extends Component {
     )
   }
 
+  renderDeliverable() {
+    const { background, deliverable } = this.props
+    return (
+      <div className="content-section-deliverable-container">
+        <label className="content-section-label">
+          Deliverable
+        </label>
+
+        <label className={`content-section-label content-section-deliverable-${background}`}>
+          {deliverable}
+        </label>
+      </div>
+    )
+  }
+
+  renderButton() {
+    return (
+      <Button href="mailto:costudio.io@gmail.com?subject=Bots for my Business"
+              color="purple">
+        Get in touch
+      </Button>
+    )
+  }
+
   render() {
     const {
       background, title, header,
-      body, deliverable, image,
-      textPosition
+      children, textPosition, deliverable,
+      button
     } = this.props
     return (
       <section className={`content-section-container content-section-${background}`} id={title}>
@@ -37,18 +65,12 @@ class ContentSection extends Component {
           </h2>
 
           <p className="content-section-body">
-            {body}
+            {children}
           </p>
 
-          <div className="content-section-deliverable-container">
-            <label className="content-section-label">
-              Deliverable
-            </label>
+          {deliverable && this.renderDeliverable()}
 
-            <label className={`content-section-label content-section-deliverable-${background}`}>
-              {deliverable}
-            </label>
-          </div>
+          {button && this.renderButton()}
         </div>
 
         {textPosition === 'left' && this.renderImage()}
