@@ -12,10 +12,10 @@ import guardian from '../../assets/images/press/press-the-guardian.svg'
 import tnw from '../../assets/images/press/press-tnw.svg'
 import vice from '../../assets/images/press/press-vice.svg'
 // Illustrations
-import exploration from '../../assets/images/illustrations/process-illustration-exploration.svg'
-import design from '../../assets/images/illustrations/process-illustration-design.svg'
-import development from '../../assets/images/illustrations/process-illustration-development.svg'
-import growth from '../../assets/images/illustrations/process-illustration-growth.svg'
+import pitchOne from '../../assets/images/illustrations/illustration-pitch-1.svg'
+import pitchTwo from '../../assets/images/illustrations/illustration-pitch-2.svg'
+import pitchThree from '../../assets/images/illustrations/illustration-pitch-3.svg'
+import pitchFour from '../../assets/images/illustrations/illustration-pitch-4.svg'
 import offer from '../../assets/images/illustrations/illustration-offer.svg'
 import offerVertical from '../../assets/images/illustrations/illustration-offer-vertical.svg'
 // Components
@@ -53,9 +53,9 @@ class Landing extends Component {
       <div className="app-container">
         <Navbar />
 
-        <Hero headline="Bringing bots to your business"
+        <Hero headline="Bringing chatbots to your business"
               btnText="Get in touch">
-          Bring your idea to life or streamline your business with a chatbot today
+          Automate tasks, expand your mobile presence, and cut costs today
         </Hero>
 
         <IconList icons={[ bg, bi, gizmodo, hp, lifehacker, mashable, politico, guardian, tnw, vice ]}
@@ -71,9 +71,7 @@ class Landing extends Component {
           </h2>
 
           <p className="landing-offer-body">
-            For $10K and one month’s time we’ll grow your business or bring your idea to life through chatbots.
-            <br />
-            Learn more about the advantages of a chatbot below!
+            For <b>$10K</b> we will work with you for <b>a month</b> to design and code a chatbot that will grow your business.
           </p>
 
           <Button href="mailto:costudio.io@gmail.com?subject=Bots for my Business"
@@ -86,8 +84,8 @@ class Landing extends Component {
                         textPosition={imageLocation}
                         title="1. What"
                         header="What is a chatbot?"
-                        image={exploration}
-                        button={true}>
+                        image={pitchOne}
+                        button="Learn More">
           Chatbots automate conversations and tasks.
           They can be used to answer support questions, provide directions to a store location, or order a pizza, among many other things.
           Often times chatbots provide functionality similar to a mobile app.
@@ -97,8 +95,8 @@ class Landing extends Component {
                         textPosition="right"
                         title="2. Time"
                         header="How long will it take to build my chatbot?"
-                        image={design}
-                        button={true}>
+                        image={pitchTwo}
+                        button="Let's Talk">
           In <b>only 1 month</b> you can have a chatbot built, tested, and integrated into your business.
           This tight timeline allows you to reach the mobile market quickly and cut costs.
         </ContentSection>
@@ -107,8 +105,8 @@ class Landing extends Component {
                         textPosition={imageLocation}
                         title="3. Cost"
                         header="How much will my chatbot cost?"
-                        button={true}
-                        image={development}>
+                        button="Start Building"
+                        image={pitchThree}>
           For <b>only $10k</b> you can build a custom chatbot for your business or idea.
           With the help of our proprietary software and industry expertise we are capable of building bots in an economic fashion.
         </ContentSection>
@@ -117,9 +115,9 @@ class Landing extends Component {
                         textPosition="right"
                         title="4. Discovery"
                         header="How will customers find my chatbot?"
-                        button={true}
-                        image={growth}>
-          Customers typically will find your chatbot through your business’s Facebook Page.
+                        button="Get Started"
+                        image={pitchFour}>
+          Customers typically find chatbots through a business’s Facebook Page.
           Your chatbot can utilize your Facebook Page’s audience, which is a nascent asset for most businesses and entrepreneurs.
         </ContentSection>
 

@@ -90,7 +90,7 @@
 @mixin contentSection-sm() {
   .content-section-container {
     flex-direction: column;
-    padding: $padding-2 $padding-1;
+    padding: $padding-4 $padding-1;
   }
 
   .content-section-text-container,

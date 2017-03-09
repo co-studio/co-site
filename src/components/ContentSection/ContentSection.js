@@ -36,11 +36,11 @@ class ContentSection extends Component {
     )
   }
 
-  renderButton() {
+  renderButton(btnText) {
     return (
       <Button href="mailto:costudio.io@gmail.com?subject=Bots for my Business"
               color="purple">
-        Get in touch
+        {btnText}
       </Button>
     )
   }
@@ -70,7 +70,7 @@ class ContentSection extends Component {
 
           {deliverable && this.renderDeliverable()}
 
-          {button && this.renderButton()}
+          {button && this.renderButton(button)}
         </div>
 
         {textPosition === 'left' && this.renderImage()}
