@@ -18,7 +18,7 @@
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
-    "deploy": "pushstate-server build",
+    "deploy": "npm run build && pushstate-server build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
