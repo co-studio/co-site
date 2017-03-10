@@ -41,12 +41,9 @@
 //
 
 .about-header {
+  @include subheader();
   align-self: center;
   margin: $padding-2 0 0;
-  text-transform: uppercase;
-  color: $gray-7;
-  font-weight: 600;
-  border-bottom: 4px solid $gray-7;
 }
 
 .about-name,

@@ -5,11 +5,13 @@ import { Router, Route } from 'react-router';
 import About from './pages/About/About';
 import Process from './pages/Process/Process';
 import Landing from './pages/Landing/Landing';
+import Bots from './pages/Bots/Bots';
 
 const Routes = (props) => (
   <Router {...props}>
-    <Route path="/about" component={About} />
     <Route path="/process" component={Process} />
+    <Route path="/bots" component={Bots} />
+    <Route path="/about" component={About} />
     <Route path="*" component={Landing} />
   </Router>
 )

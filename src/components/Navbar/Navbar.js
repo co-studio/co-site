@@ -9,6 +9,8 @@ class Navbar extends Component {
   constructor(props) {
     super(props)
     this.toggleMobileMenu = this.toggleMobileMenu.bind(this)
+    this.renderNavItem = this.renderNavItem.bind(this)
+    this.renderMobileNavItem = this.renderMobileNavItem.bind(this)
 
     this.state = {
       menuOpen: false
@@ -21,19 +23,49 @@ class Navbar extends Component {
     })
   }
 
+  renderNavItem({ href, label }) {
+    return (
+      <Link to={href}
+            className="nav-item"
+            key={label}>
+        {label}
+      </Link>
+    )
+  }
+
+  renderMobileNavItem({ href, label }) {
+    return (
+      <Link to={href}
+            className="nav-mobile-item"
+            key={label}>
+        {label}
+      </Link>
+    )
+  }
+
   render() {
+    const navItems = [
+      { label: 'Our Offer', href: '/' },
+      { label: 'Process', href: '/process' },
+      { label: 'Bots', href: '/bots' },
+      { label: 'About', href: '/about' },
+      { label: 'Contact Us', href: '/contact' },
+    ]
+
     return (
       <nav id="navbar" className="navbar">
         <Link to="/">
           <img src={logoWhite} className="logo" alt="Co Studio" />
         </Link>
 
-        <a href="mailto:costudio.io@gmail.com"
+        {navItems.reverse().map(this.renderNavItem)}
+        {/* <a href="mailto:costudio.io@gmail.com"
            className="nav-item">
           Contact Us
-        </a>
+        </a> */}
 
-        <Link to="/about"
+
+        {/* <Link to="/about"
               className="nav-item">
           About
         </Link>
@@ -46,7 +78,7 @@ class Navbar extends Component {
         <Link to="/"
               className="nav-item">
           Our Offer
-        </Link>
+        </Link> */}
 
         <i className="nav-menu" onClick={this.toggleMobileMenu}>
           <img className="nav-menu-icon"
@@ -62,7 +94,8 @@ class Navbar extends Component {
            </i>
 
           <div className="nav-mobile-items" onClick={this.toggleMobileMenu}>
-            <Link to="/"
+            {navItems.reverse().map(this.renderMobileNavItem)}
+            {/* <Link to="/"
                   className="nav-mobile-item">
               Our Offer
             </Link>
@@ -80,7 +113,7 @@ class Navbar extends Component {
             <a href="mailto:costudio.io@gmail.com"
               className="nav-mobile-item">
               Contact Us
-            </a>
+            </a> */}
           </div>
         </nav>
       </nav>

@@ -52,28 +52,6 @@ class Process extends Component {
 
         <IconList background="#c9c7ce"/>
 
-{/*
-        <section className="landing-offer">
-          <img className="illustration-offer"
-            src={offerImage}
-            alt="Our Offer" />
-
-          <h2 className="landing-offer-header">
-            Our offer is simple
-          </h2>
-
-          <p className="landing-offer-body">
-            Cut costs and boost your business with a chatbot for $10k over one month.
-            <br />
-            Learn more about our process below.
-          </p>
-
-          <Button href="mailto:costudio.io@gmail.com?subject=Bots for my Business"
-                  color="purple">
-            Get Started
-          </Button>
-        </section> */}
-
         <ContentSection background="dark"
                         textPosition={imageLocation}
                         title="1. Exploration"

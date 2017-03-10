@@ -22,13 +22,7 @@
 }
 
 .landing-offer-header {
-  margin: 0;
-  text-align: center;
-  font-size: $font-size-subheader;
-  font-weight: 600;
-  color: $gray-7;
-  border-bottom: 4px solid $gray-7;
-  text-transform: uppercase;
+  @include subheader();
 }
 
 .landing-offer-body {
