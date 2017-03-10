@@ -5,12 +5,9 @@ import exploration from '../../assets/images/illustrations/process-illustration-
 import design from '../../assets/images/illustrations/process-illustration-design.svg'
 import development from '../../assets/images/illustrations/process-illustration-development.svg'
 import growth from '../../assets/images/illustrations/process-illustration-growth.svg'
-import offer from '../../assets/images/illustrations/illustration-offer.svg'
-import offerVertical from '../../assets/images/illustrations/illustration-offer-vertical.svg'
 // Components
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
-import Button from '../../components/Button/Button'
 import Hero from '../../components/Hero/Hero'
 import IconList from '../../components/IconList/IconList'
 import ContentSection from '../../components/ContentSection/ContentSection'
@@ -30,10 +27,6 @@ class Process extends Component {
   }
 
   render() {
-    const offerImage = (this.state.windowWidth > 768)
-      ? offer
-      : offerVertical
-
     const imageLocation = (this.state.windowWidth > 768)
       ? 'left'
       : 'right'

@@ -38,7 +38,7 @@ class ContentSection extends Component {
 
   renderButton(btnText) {
     return (
-      <Button href="mailto:costudio.io@gmail.com?subject=Bots for my Business"
+      <Button href="/contact"
               color="purple">
         {btnText}
       </Button>

@@ -62,7 +62,7 @@ class Landing extends Component {
             For <b>$10K</b> we will work with you for <b>a month</b> to design and code a chatbot that will grow your business.
           </p>
 
-          <Button href="mailto:costudio.io@gmail.com?subject=Bots for my Business"
+          <Button href="/contact"
                   color="purple">
             Get Started
           </Button>

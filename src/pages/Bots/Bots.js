@@ -22,7 +22,7 @@ class Bots extends Component {
 
         <Hero headline="Our Chatbots"
               btnText="Get in touch"
-              background="about">
+              background="bots">
           We build chatbots internally and externally with
           <br />
           a consistent focus on delivering value to the end user.

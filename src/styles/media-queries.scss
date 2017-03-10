@@ -10,6 +10,7 @@
 @import '../pages/Process/Process.scss';
 @import '../pages/Landing/Landing.scss';
 @import '../pages/Bots/Bots.scss';
+@import '../pages/Contact/Contact.scss';
 
 // small screen size (sm)
 @media (max-width: 768px) {
@@ -24,6 +25,7 @@
 
   @include about-sm();
   @include bots-sm();
+  @include contact-sm();
 }
 
 // medium screen size (md)

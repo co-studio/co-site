@@ -8,14 +8,14 @@ class Footer extends Component {
     return(
       <footer className="footer-container">
           <div className="footer-links">
-            
+
             <div className="footer-left">
               <a href="#navbar">
                 <img src={logoWhite} className="footer-logo" alt="Co" />
               </a>
 
-              <a href="mailto:costudio.io@gmail.com" className="footer-email">
-                costudio.io@gmail.com
+              <a href="mailto:logan@costudio.io" className="footer-email">
+                logan@costudio.io
               </a>
 
               <span className="footer-copyright">
@@ -28,7 +28,7 @@ class Footer extends Component {
                 Ready to learn more or get started?
               </label>
 
-              <Button href="mailto:costudio.io@gmail.com?subject=Bots for my Business"
+              <Button href="/contact"
                       color="purple">
                 Get in touch
               </Button>

@@ -12,6 +12,8 @@
   font-family: 'Gotham';
   border: 1px solid transparent;
   transition: $hover-transition;
+  cursor: pointer;
+  outline: none;
 
   &:hover {
     box-shadow: $btn-shadow;

@@ -3,6 +3,20 @@ import React, { Component } from 'react'
 import Button from '../Button/Button';
 
 class Hero extends Component {
+  constructor(props) {
+    super(props)
+    this.renderButton = this.renderButton.bind(this)
+  }
+
+  renderButton(btnText) {
+    return (
+      <Button href="/contact#form"
+              color="purple">
+        {btnText}
+      </Button>
+    )
+  }
+
   render() {
     const { headline, children, btnText, background } = this.props
 
@@ -17,10 +31,7 @@ class Hero extends Component {
         </p>
 
         <div className="btn-group">
-          <Button href="mailto:costudio.io@gmail.com?subject=Bots for my Business"
-                  color="purple">
-            {btnText}
-          </Button>
+          {btnText && this.renderButton(btnText)}
         </div>
       </section>
     )
