@@ -20,12 +20,16 @@ class IconList extends Component {
     this.renderIcon = this.renderIcon.bind(this)
   }
 
-  renderIcon(icon, index) {
+  renderIcon({ icon, href }, index) {
     return (
-      <img className="icon-list-item"
-           src={icon}
-           alt={icon}
-           key={index} />
+      <a className="icon-list-item"
+         href={href}
+         target="_blank"
+         key={index}>
+        <img className="icon-list-image"
+             src={icon}
+             alt={href} />
+      </a>
     )
   }
 
@@ -33,7 +37,20 @@ class IconList extends Component {
     let { icons, background } = this.props
 
     if (!icons) {
-      icons = [ nowthis, adweek, bg, bi, gizmodo, hp, lifehacker, mashable, politico, guardian, tnw, vice ]
+      icons = [
+        { icon: bg, href: 'https://www.bostonglobe.com/business/2014/09/12/new-app-makes-job-hunting-social-experience/0a0GHZxxRjPscJaRmgdc3O/story.html' },
+        { icon: hp, href: 'http://www.huffingtonpost.com/melanie-curtin/the-coolest-networking-ap_b_5730554.html' },
+        { icon: gizmodo, href: 'http://gizmodo.com/our-favorite-android-ios-and-windows-phone-apps-of-th-1721133864' },
+        { icon: lifehacker, href: 'http://lifehacker.com/lrn-helps-you-learn-to-code-at-your-convenience-1721210656' },
+        { icon: tnw, href: 'https://thenextweb.com/apps/2015/07/28/want-a-javascript-joke-i-will-callback-later/#.tnw_eEcXKYX8' },
+        { icon: bi, href: 'http://www.businessinsider.com/lrn-coding-app-2015-7' },
+        { icon: guardian, href: 'https://www.theguardian.com/tv-and-radio/2016/oct/23/global-election-whoisneil-rich-halls-us-election-breakdown' },
+        { icon: politico, href: 'http://www.politico.com/story/2016/09/donald-trump-twitter-army-228923' },
+        { icon: vice, href: 'https://news.vice.com/story/alt-right-racists-twitter-bot' },
+        { icon: adweek, href: 'http://www.adweek.com/digital/sherry-gray-guest-post-webot/' },
+        { icon: nowthis, href: 'https://www.facebook.com/NowThisPolitics/videos/1454064204625065/' },
+        { icon: mashable, href: 'http://mashable.com/2017/02/08/facebook-bot-trump-protests-webot/#9BJBdJJ5h8qS' },
+      ]
     }
 
     return (

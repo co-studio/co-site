@@ -253,28 +253,43 @@ body {
   width: 100%; }
 
 .list-shortener {
+  position: relative;
+  height: 100px;
   display: flex;
   justify-content: center;
   overflow: hidden;
   width: 1024px; }
 
 .icon-list {
+  position: absolute;
   display: flex;
+  align-items: center;
   box-sizing: border-box;
-  padding: 25px 0;
+  width: 2048px;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-name: horizontalTicker;
-  animation-duration: 90s; }
+  animation-duration: 60s; }
 
 .icon-list-item {
-  margin: 0 25px; }
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 12.5px 25px;
+  transition: all 0.15s cubic-bezier(0, 0, 0.7, 1); }
+
+.icon-list-item:hover {
+  background: #f0eff1; }
+
+.icon-list-image {
+  width: 100%; }
 
 @keyframes horizontalTicker {
   0% {
-    transform: translateX(-1400px); }
+    transform: translateX(-1550px); }
   100% {
-    transform: translateX(1400px); } }
+    transform: translateX(1550px); } }
 
 @font-face {
   font-family: 'Gotham';
@@ -352,6 +367,21 @@ body {
 
 .content-section-deliverable-dark {
   color: #fff; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Book.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Medium.ttf") format("truetype");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Light.ttf") format("truetype");
+  font-weight: 100; }
 
 .thumbnail-container {
   box-sizing: border-box;
@@ -544,6 +574,21 @@ body {
   margin-bottom: 50px;
   text-align: center;
   font-size: 24px; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Book.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Medium.ttf") format("truetype");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Light.ttf") format("truetype");
+  font-weight: 100; }
 
 .bots-body {
   box-sizing: border-box;
@@ -795,28 +840,43 @@ body {
   width: 100%; }
 
 .list-shortener {
+  position: relative;
+  height: 100px;
   display: flex;
   justify-content: center;
   overflow: hidden;
   width: 1024px; }
 
 .icon-list {
+  position: absolute;
   display: flex;
+  align-items: center;
   box-sizing: border-box;
-  padding: 25px 0;
+  width: 2048px;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-name: horizontalTicker;
-  animation-duration: 90s; }
+  animation-duration: 60s; }
 
 .icon-list-item {
-  margin: 0 25px; }
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 12.5px 25px;
+  transition: all 0.15s cubic-bezier(0, 0, 0.7, 1); }
+
+.icon-list-item:hover {
+  background: #f0eff1; }
+
+.icon-list-image {
+  width: 100%; }
 
 @keyframes horizontalTicker {
   0% {
-    transform: translateX(-1400px); }
+    transform: translateX(-1550px); }
   100% {
-    transform: translateX(1400px); } }
+    transform: translateX(1550px); } }
 
 @font-face {
   font-family: 'Gotham';
@@ -894,6 +954,21 @@ body {
 
 .content-section-deliverable-dark {
   color: #fff; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Book.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Medium.ttf") format("truetype");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Light.ttf") format("truetype");
+  font-weight: 100; }
 
 .thumbnail-container {
   box-sizing: border-box;
@@ -1087,6 +1162,21 @@ body {
   text-align: center;
   font-size: 24px; }
 
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Book.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Medium.ttf") format("truetype");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("./assets/fonts/Gotham-Light.ttf") format("truetype");
+  font-weight: 100; }
+
 .bots-body {
   box-sizing: border-box;
   display: flex;
@@ -1118,7 +1208,7 @@ body {
   .list-shortener {
     width: 100%; }
   .icon-list {
-    animation-duration: 45s; }
+    animation-duration: 35s; }
   .headline-container {
     padding: 0 25px; }
   .navbar,

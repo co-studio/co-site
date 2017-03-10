@@ -42,12 +42,12 @@ class Bots extends Component {
                        description="Discover nearby activism events" />
 
             <Thumbnail image={budbot}
-                       href="https://facebook.com/BudBot"
+                       href="https://facebook.com/BudBot-1827797007496925"
                        title="BudBot"
-                       description="Engage your audience on social media" />
+                       description="Explore cannabis strains through emojis" />
 
             <Thumbnail image={bbp}
-                       href="github.com/hoodsy/messenger-bot-boilerplate"
+                       href="https://github.com/hoodsy/messenger-bot-boilerplate"
                        title="BoilerBot"
                        description="Learn how to build chatbots" />
 
@@ -56,6 +56,7 @@ class Bots extends Component {
                        description="Laundry made easy" />
 
             <Thumbnail image={impressiv}
+                       href="https://news.vice.com/story/alt-right-racists-twitter-bot"
                        title="Impressiv"
                        description="Engage your audience on social media" />
 
