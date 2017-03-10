@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import Hero from '../../components/Hero/Hero'
-
+import IconList from '../../components/IconList/IconList'
 
 class Contact extends Component {
   constructor(props) {
@@ -68,6 +68,8 @@ class Contact extends Component {
               background="contact">
           We are always happy to talk and will respond within a day's time.
         </Hero>
+        
+        <IconList background="#c9c7ce"/>
 
         <section className="contact-container">
           <h2 className="contact-header">
