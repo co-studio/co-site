@@ -1,16 +1,5 @@
 import React, { Component } from 'react'
 
-// Press
-import bg from '../../assets/images/press/press-boston-globe.svg'
-import bi from '../../assets/images/press/press-business-insider.svg'
-import gizmodo from '../../assets/images/press/press-gizmodo.svg'
-import hp from '../../assets/images/press/press-huffington-post.svg'
-import lifehacker from '../../assets/images/press/press-lifehacker.svg'
-import mashable from '../../assets/images/press/press-mashable.svg'
-import politico from '../../assets/images/press/press-politico.svg'
-import guardian from '../../assets/images/press/press-the-guardian.svg'
-import tnw from '../../assets/images/press/press-tnw.svg'
-import vice from '../../assets/images/press/press-vice.svg'
 // Illustrations
 import exploration from '../../assets/images/illustrations/process-illustration-exploration.svg'
 import design from '../../assets/images/illustrations/process-illustration-design.svg'
@@ -61,10 +50,9 @@ class Process extends Component {
           After crafting countless bots, we've learned a thing or two.
         </Hero>
 
-        <IconList icons={[ bg, bi, gizmodo, hp, lifehacker, mashable, politico, guardian, tnw, vice ]}
-                  background="#c9c7ce"/>
+        <IconList background="#c9c7ce"/>
 
-
+{/*
         <section className="landing-offer">
           <img className="illustration-offer"
             src={offerImage}
@@ -84,7 +72,7 @@ class Process extends Component {
                   color="purple">
             Get Started
           </Button>
-        </section>
+        </section> */}
 
         <ContentSection background="dark"
                         textPosition={imageLocation}
@@ -92,7 +80,7 @@ class Process extends Component {
                         header="What problem are we solving?"
                         deliverable="Market Research"
                         image={exploration}
-                        button={true}>
+                        button="Get Started">
           To start, we research your business and identify areas that chatbots can improve your operations.
           Some common use cases are customer service, order tracking, digital coupon delivery and direct sales campaigns.
         </ContentSection>
@@ -103,7 +91,7 @@ class Process extends Component {
                         header="What's the user experience?"
                         deliverable="Product Requirements"
                         image={design}
-                        button={true}>
+                        button="Get Started">
           Next we collaborate with you to design a chatbot experience that grows your bottom line.
           A well designed conversational interface will boost user retention and provide a seamless experience.
         </ContentSection>
@@ -114,7 +102,7 @@ class Process extends Component {
                         header="What are we coding?"
                         deliverable="Custom-built Bot"
                         image={development}
-                        button={true}>
+                        button="Get Started">
           Time to code your chatbot.
           We use our proprietary software to build efficiently and scalably while providing you with incremental versions throughout the process.
         </ContentSection>
@@ -125,7 +113,7 @@ class Process extends Component {
                         header="How can we grow your user base?"
                         deliverable="Go-to-market Strategy"
                         image={growth}
-                        button={true}>
+                        button="Get Started">
           Finally, we determine a user acquisition strategy for your chatbot’s continued growth.
           Let us find the acquisition channels which work best for your business and chatbot!
         </ContentSection>

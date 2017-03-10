@@ -1,16 +1,5 @@
 import React, { Component } from 'react';
 
-// Press
-import bg from '../../assets/images/press/press-boston-globe.svg'
-import bi from '../../assets/images/press/press-business-insider.svg'
-import gizmodo from '../../assets/images/press/press-gizmodo.svg'
-import hp from '../../assets/images/press/press-huffington-post.svg'
-import lifehacker from '../../assets/images/press/press-lifehacker.svg'
-import mashable from '../../assets/images/press/press-mashable.svg'
-import politico from '../../assets/images/press/press-politico.svg'
-import guardian from '../../assets/images/press/press-the-guardian.svg'
-import tnw from '../../assets/images/press/press-tnw.svg'
-import vice from '../../assets/images/press/press-vice.svg'
 // Images
 import logan from '../../assets/images/about/about-logan.jpg'
 import nathan from '../../assets/images/about/about-nathan.jpg'
@@ -33,8 +22,7 @@ class About extends Component {
           bound together by a passion for products and people.
         </Hero>
 
-        <IconList icons={[ bg, bi, gizmodo, hp, lifehacker, mashable, politico, guardian, tnw, vice ]}
-                  background="#c9c7ce"/>
+        <IconList background="#c9c7ce"/>
 
         <section className="about-body">
           <h3 className="about-header">
@@ -85,6 +73,7 @@ class About extends Component {
               <br />
               <br />
               As an extension of our interest in mobile products, we started building political bots during the 2016 election.
+              After around 4 months we had amassed over 200M views our content, exclusively promoted by our bots.
               Our election bot work was featured in VICE News and The Ringer for our innovations in news tech.
               <br />
               <br />

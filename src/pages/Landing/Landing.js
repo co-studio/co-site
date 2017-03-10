@@ -1,16 +1,5 @@
 import React, { Component } from 'react'
 
-// Press
-import bg from '../../assets/images/press/press-boston-globe.svg'
-import bi from '../../assets/images/press/press-business-insider.svg'
-import gizmodo from '../../assets/images/press/press-gizmodo.svg'
-import hp from '../../assets/images/press/press-huffington-post.svg'
-import lifehacker from '../../assets/images/press/press-lifehacker.svg'
-import mashable from '../../assets/images/press/press-mashable.svg'
-import politico from '../../assets/images/press/press-politico.svg'
-import guardian from '../../assets/images/press/press-the-guardian.svg'
-import tnw from '../../assets/images/press/press-tnw.svg'
-import vice from '../../assets/images/press/press-vice.svg'
 // Illustrations
 import pitchOne from '../../assets/images/illustrations/illustration-pitch-1.svg'
 import pitchTwo from '../../assets/images/illustrations/illustration-pitch-2.svg'
@@ -58,8 +47,7 @@ class Landing extends Component {
           Automate tasks, expand your mobile presence, and cut costs today
         </Hero>
 
-        <IconList icons={[ bg, bi, gizmodo, hp, lifehacker, mashable, politico, guardian, tnw, vice ]}
-                  background="#c9c7ce"/>
+        <IconList background="#c9c7ce"/>
 
         <section className="landing-offer">
           <img className="illustration-offer"
