@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   box-sizing: border-box;
   width: 100%;
   padding: $padding-4 $padding-1;
@@ -30,6 +31,7 @@
   box-sizing: border-box;
   padding: 0 $padding-2;
   width: 35%;
+  min-width: 512px;
 }
 
 .content-section-image-container {
@@ -79,6 +81,12 @@
   font-weight: 100;
 }
 
+// .content-section-image {
+//   width: 100%;
+//   max-width: 512px;
+//   min-width: 384px;
+// }
+
 .content-section-deliverable-light {
   color: $black;
 }
@@ -97,6 +105,7 @@
   .content-section-image-container {
     padding: $padding-1 0;
     width: 100%;
+    min-width: 100%;
   }
 
   .content-section-text-container {

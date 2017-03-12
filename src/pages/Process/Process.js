@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
 // Illustrations
-import exploration from '../../assets/images/illustrations/process-illustration-exploration.svg'
-import design from '../../assets/images/illustrations/process-illustration-design.svg'
-import development from '../../assets/images/illustrations/process-illustration-development.svg'
-import growth from '../../assets/images/illustrations/process-illustration-growth.svg'
+import processOne from '../../assets/images/illustrations/illustration-process-1.svg'
+import processTwo from '../../assets/images/illustrations/illustration-process-2.svg'
+import processThree from '../../assets/images/illustrations/illustration-process-3.svg'
+import processFour from '../../assets/images/illustrations/illustration-process-4.svg'
 // Components
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
@@ -48,9 +48,9 @@ class Process extends Component {
         <ContentSection background="dark"
                         textPosition={imageLocation}
                         title="1. Exploration"
-                        header="What problem are we solving?"
+                        header="How can we grow your business with chatbots?"
                         deliverable="Market Research"
-                        image={exploration}
+                        image={processOne}
                         button="Get Started">
           To start, we research your business and identify areas that chatbots can improve your operations.
           Some common use cases are customer service, order tracking, digital coupon delivery and direct sales campaigns.
@@ -59,9 +59,9 @@ class Process extends Component {
         <ContentSection background="light"
                         textPosition="right"
                         title="2. Design"
-                        header="What's the user experience?"
+                        header="What user experience can grow your bottom line?"
                         deliverable="Product Requirements"
-                        image={design}
+                        image={processTwo}
                         button="Get Started">
           Next we collaborate with you to design a chatbot experience that grows your bottom line.
           A well designed conversational interface will boost user retention and provide a seamless experience.
@@ -70,9 +70,9 @@ class Process extends Component {
         <ContentSection background="dark"
                         textPosition={imageLocation}
                         title="3. Development"
-                        header="What are we coding?"
+                        header="How can a chatbot expand your operations?"
                         deliverable="Custom-built Bot"
-                        image={development}
+                        image={processThree}
                         button="Get Started">
           Time to code your chatbot.
           We use our proprietary software to build efficiently and scalably while providing you with incremental versions throughout the process.
@@ -83,7 +83,7 @@ class Process extends Component {
                         title="4. Growth"
                         header="How can we grow your user base?"
                         deliverable="Go-to-market Strategy"
-                        image={growth}
+                        image={processFour}
                         button="Get Started">
           Finally, we determine a user acquisition strategy for your chatbot’s continued growth.
           Let us find the acquisition channels which work best for your business and chatbot!
