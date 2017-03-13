@@ -26,8 +26,8 @@ class Footer extends Component {
 
   render() {
     const icons = [
-      { image: iconTwitter, href: 'https://twitter.com' },
-      { image: iconFacebook, href: 'https://facebook.com' }
+      { image: iconTwitter, href: 'https://twitter.com/CoStudio_io' },
+      { image: iconFacebook, href: 'https://facebook.com/CoStudio.io' }
     ]
 
     return(

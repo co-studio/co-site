@@ -67,6 +67,16 @@
   padding: 0 $padding-1;
   margin-top: 0;
   margin-bottom: $padding-2;
+
+  a {
+    text-decoration: none;
+    color: $purple;
+    transition: $hover-transition;
+
+    &:hover {
+      color: darken($purple, 30%);
+    }
+  }
 }
 
 @mixin about-sm() {

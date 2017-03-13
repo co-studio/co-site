@@ -49,7 +49,7 @@ class IconList extends Component {
         { icon: vice, href: 'https://news.vice.com/story/alt-right-racists-twitter-bot' },
         { icon: adweek, href: 'http://www.adweek.com/digital/sherry-gray-guest-post-webot/' },
         { icon: nowthis, href: 'https://www.facebook.com/NowThisPolitics/videos/1454064204625065/' },
-        { icon: mashable, href: 'http://mashable.com/2017/02/08/facebook-bot-trump-protests-webot/#9BJBdJJ5h8qS' },
+        { icon: mashable, href: 'http://mashable.com/2017/02/08/facebook-bot-trump-protests-webot' },
       ]
     }
 

@@ -9,7 +9,7 @@ import Bots from './pages/Bots/Bots';
 import Contact from './pages/Contact/Contact';
 
 const Routes = (props) => (
-  <Router {...props}>
+  <Router {...props} onUpdate={() => window.scrollTo(0, 0)}>
     <Route path="/process" component={Process} />
     <Route path="/bots" component={Bots} />
     <Route path="/about" component={About} />

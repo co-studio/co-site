@@ -62,7 +62,7 @@ class Process extends Component {
                         header="What user experience can grow your bottom line?"
                         deliverable="Product Requirements"
                         image={processTwo}
-                        button="Get Started">
+                        button="Let's Talk">
           Next we collaborate with you to design a chatbot experience that grows your bottom line.
           A well designed conversational interface will boost user retention and provide a seamless experience.
         </ContentSection>
@@ -73,7 +73,7 @@ class Process extends Component {
                         header="How can a chatbot expand your operations?"
                         deliverable="Custom-built Bot"
                         image={processThree}
-                        button="Get Started">
+                        button="Build your Bot">
           Time to code your chatbot.
           We use our proprietary software to build efficiently and scalably while providing you with incremental versions throughout the process.
         </ContentSection>
@@ -84,7 +84,7 @@ class Process extends Component {
                         header="How can we grow your user base?"
                         deliverable="Go-to-market Strategy"
                         image={processFour}
-                        button="Get Started">
+                        button="Launch Now">
           Finally, we determine a user acquisition strategy for your chatbot’s continued growth.
           Let us find the acquisition channels which work best for your business and chatbot!
         </ContentSection>

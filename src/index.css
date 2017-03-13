@@ -496,6 +496,14 @@ body {
   margin-top: 0;
   margin-bottom: 50px; }
 
+.about-story a {
+  text-decoration: none;
+  color: #5c38e3;
+  transition: all 0.15s cubic-bezier(0, 0, 0.7, 1); }
+
+.about-story a:hover {
+  color: #251072; }
+
 @font-face {
   font-family: 'Gotham';
   src: url("./assets/fonts/Gotham-Book.ttf") format("truetype");
@@ -1195,6 +1203,14 @@ body {
   margin-top: 0;
   margin-bottom: 50px; }
 
+.about-story a {
+  text-decoration: none;
+  color: #5c38e3;
+  transition: all 0.15s cubic-bezier(0, 0, 0.7, 1); }
+
+.about-story a:hover {
+  color: #251072; }
+
 @font-face {
   font-family: 'Gotham';
   src: url("./assets/fonts/Gotham-Book.ttf") format("truetype");
@@ -1483,7 +1499,8 @@ body {
     align-self: center; }
   .btn,
   .btn-group {
-    width: 100%; }
+    width: 100%;
+    text-align: center; }
   .landing-offer {
     padding: 50px 25px; }
   .illustration-offer {
