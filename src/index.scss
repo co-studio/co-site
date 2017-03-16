@@ -14,6 +14,7 @@ body {
   font-weight: 300;
   color: $black;
   line-height: 1.3;
+  background: url('./assets/images/background-tile.svg'), linear-gradient(0deg, $black, $black-purple-2);
   // -webkit-font-smoothing: antialiased;
   // -moz-osx-font-smoothing: grayscale;
 }
