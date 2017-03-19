@@ -42,10 +42,10 @@ class Landing extends Component {
       <div className="app-container">
         <Navbar location={this.props.location} />
 
-        <Hero headline="Bringing chatbots to your business"
+      <Hero headline="Bringing Bots to your business"
               btnText="Get in touch">
-          Automate tasks, expand your mobile presence, and cut costs today
-        </Hero>
+        Upgrade your business with a multi-platform chatbot or app
+      </Hero>
 
         <IconList background="#c9c7ce"/>
 
