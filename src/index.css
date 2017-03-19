@@ -56,7 +56,7 @@ body {
 .nav-item,
 .nav-mobile-item {
   padding: 12.5px;
-  color: #fff;
+  color: #bfbdc5;
   font-weight: 300;
   font-size: 14px;
   text-transform: uppercase;
@@ -67,7 +67,12 @@ body {
 
 .nav-item:hover,
 .nav-mobile-item:hover {
-  background: #938f9f; }
+  background: #938f9f;
+  color: #fff; }
+
+.nav-item-active,
+.nav-mobile-item-active {
+  color: #fff; }
 
 .nav-menu,
 .nav-mobile {
@@ -552,6 +557,34 @@ body {
   text-align: center;
   font-size: 24px; }
 
+.bots-body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  background: #fff; }
+
+.bots-header {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #a9a6b3;
+  border-bottom: 4px solid #a9a6b3;
+  text-transform: uppercase;
+  align-self: center;
+  margin-bottom: 25px; }
+
+.bots-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: center;
+  align-items: center; }
+
 @font-face {
   font-family: 'Gotham';
   src: url("./assets/fonts/Gotham-Book.ttf") format("truetype");
@@ -599,49 +632,6 @@ body {
   margin-bottom: 50px;
   text-align: center;
   font-size: 24px; }
-
-@font-face {
-  font-family: 'Gotham';
-  src: url("./assets/fonts/Gotham-Book.ttf") format("truetype");
-  font-weight: 300; }
-
-@font-face {
-  font-family: 'Gotham';
-  src: url("./assets/fonts/Gotham-Medium.ttf") format("truetype");
-  font-weight: 600; }
-
-@font-face {
-  font-family: 'Gotham';
-  src: url("./assets/fonts/Gotham-Light.ttf") format("truetype");
-  font-weight: 100; }
-
-.bots-body {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 50px;
-  justify-content: center;
-  align-items: center;
-  background: #fff; }
-
-.bots-header {
-  margin: 0;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 600;
-  color: #a9a6b3;
-  border-bottom: 4px solid #a9a6b3;
-  text-transform: uppercase;
-  align-self: center;
-  margin-bottom: 25px; }
-
-.bots-portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  width: 70%;
-  justify-content: center;
-  align-items: center; }
 
 @font-face {
   font-family: 'Gotham';
@@ -766,7 +756,7 @@ body {
 .nav-item,
 .nav-mobile-item {
   padding: 12.5px;
-  color: #fff;
+  color: #bfbdc5;
   font-weight: 300;
   font-size: 14px;
   text-transform: uppercase;
@@ -777,7 +767,12 @@ body {
 
 .nav-item:hover,
 .nav-mobile-item:hover {
-  background: #938f9f; }
+  background: #938f9f;
+  color: #fff; }
+
+.nav-item-active,
+.nav-mobile-item-active {
+  color: #fff; }
 
 .nav-menu,
 .nav-mobile {
@@ -1262,6 +1257,34 @@ body {
   text-align: center;
   font-size: 24px; }
 
+.bots-body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  background: #fff; }
+
+.bots-header {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #a9a6b3;
+  border-bottom: 4px solid #a9a6b3;
+  text-transform: uppercase;
+  align-self: center;
+  margin-bottom: 25px; }
+
+.bots-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: center;
+  align-items: center; }
+
 @font-face {
   font-family: 'Gotham';
   src: url("./assets/fonts/Gotham-Book.ttf") format("truetype");
@@ -1309,49 +1332,6 @@ body {
   margin-bottom: 50px;
   text-align: center;
   font-size: 24px; }
-
-@font-face {
-  font-family: 'Gotham';
-  src: url("./assets/fonts/Gotham-Book.ttf") format("truetype");
-  font-weight: 300; }
-
-@font-face {
-  font-family: 'Gotham';
-  src: url("./assets/fonts/Gotham-Medium.ttf") format("truetype");
-  font-weight: 600; }
-
-@font-face {
-  font-family: 'Gotham';
-  src: url("./assets/fonts/Gotham-Light.ttf") format("truetype");
-  font-weight: 100; }
-
-.bots-body {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 50px;
-  justify-content: center;
-  align-items: center;
-  background: #fff; }
-
-.bots-header {
-  margin: 0;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 600;
-  color: #a9a6b3;
-  border-bottom: 4px solid #a9a6b3;
-  text-transform: uppercase;
-  align-self: center;
-  margin-bottom: 25px; }
-
-.bots-portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  width: 70%;
-  justify-content: center;
-  align-items: center; }
 
 @font-face {
   font-family: 'Gotham';

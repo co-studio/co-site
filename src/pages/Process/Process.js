@@ -1,5 +1,12 @@
 import React, { Component } from 'react'
 
+// Images
+import webot from '../../assets/images/bots/logo-webot.svg'
+import wrinkle from '../../assets/images/bots/logo-wrinkle.svg'
+import budbot from '../../assets/images/bots/logo-budbot.svg'
+import bbp from '../../assets/images/bots/logo-bbp.svg'
+import impressiv from '../../assets/images/bots/logo-impressiv.svg'
+import wwt from '../../assets/images/bots/logo-wwt.svg'
 // Illustrations
 import processOne from '../../assets/images/illustrations/illustration-process-1.svg'
 import processTwo from '../../assets/images/illustrations/illustration-process-2.svg'
@@ -11,6 +18,7 @@ import Footer from '../../components/Footer/Footer'
 import Hero from '../../components/Hero/Hero'
 import IconList from '../../components/IconList/IconList'
 import ContentSection from '../../components/ContentSection/ContentSection'
+import Thumbnail from '../../components/Thumbnail/Thumbnail'
 
 class Process extends Component {
   constructor(props) {
@@ -33,17 +41,54 @@ class Process extends Component {
 
     return (
       <div className="app-container">
-        <Navbar />
+        <Navbar location={this.props.location} />
 
-        <Hero headline="Our Process"
+      <Hero headline="Our Work"
               btnText="Get in touch"
               background="process">
-          We take a wholistic, business driven approach to building bots.
+          We take a wholistic, business driven approach to building bots and apps.
           <br />
-          After crafting countless bots, we've learned a thing or two.
+          All of our products are focused on delivering value to their users.
         </Hero>
 
         <IconList background="#c9c7ce"/>
+
+        <section className="bots-body">
+          <h2 className="bots-header">
+            Recent Work
+          </h2>
+
+          <div className="bots-portfolio">
+            <Thumbnail image={webot}
+                       href="https://facebook.com/WeBot"
+                       title="WeBot"
+                       description="Discover nearby activism events" />
+
+            <Thumbnail image={budbot}
+                       href="https://facebook.com/BudBot-1827797007496925"
+                       title="BudBot"
+                       description="Explore cannabis strains through emojis" />
+
+            <Thumbnail image={bbp}
+                       href="https://github.com/hoodsy/messenger-bot-boilerplate"
+                       title="BoilerBot"
+                       description="Learn how to build chatbots" />
+
+            <Thumbnail image={wrinkle}
+                       title="Wrinkle"
+                       description="Laundry made easy" />
+
+            <Thumbnail image={impressiv}
+                       href="https://news.vice.com/story/alt-right-racists-twitter-bot"
+                       title="Impressiv"
+                       description="Engage your audience on social media" />
+
+            <Thumbnail image={wwt}
+                       href="https://wewalktogether.org"
+                       title="WeWalkTogether"
+                       description="Find buddies to walk you home" />
+          </div>
+        </section>
 
         <ContentSection background="dark"
                         textPosition={imageLocation}

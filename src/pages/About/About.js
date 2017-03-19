@@ -13,7 +13,7 @@ class About extends Component {
   render() {
     return (
       <div className="app-container">
-        <Navbar />
+        <Navbar location={this.props.location} />
 
         <Hero headline="About Us"
               btnText="Get in touch"

@@ -40,7 +40,7 @@ class Landing extends Component {
 
     return (
       <div className="app-container">
-        <Navbar />
+        <Navbar location={this.props.location} />
 
         <Hero headline="Bringing chatbots to your business"
               btnText="Get in touch">

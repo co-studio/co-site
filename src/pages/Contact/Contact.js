@@ -62,13 +62,13 @@ class Contact extends Component {
   render() {
     return (
       <div className="app-container">
-        <Navbar />
+        <Navbar location={this.props.location} />
 
         <Hero headline="Let's Chat"
               background="contact">
           We are always happy to talk and will respond within a day's time.
         </Hero>
-        
+
         <IconList background="#c9c7ce"/>
 
         <section className="contact-container">

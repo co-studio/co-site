@@ -9,6 +9,7 @@ class Navbar extends Component {
   constructor(props) {
     super(props)
     this.toggleMobileMenu = this.toggleMobileMenu.bind(this)
+    this.getItemClassnames = this.getItemClassnames.bind(this)
     this.renderNavItem = this.renderNavItem.bind(this)
     this.renderMobileNavItem = this.renderMobileNavItem.bind(this)
 
@@ -23,10 +24,32 @@ class Navbar extends Component {
     })
   }
 
+  getItemClassnames(href, className) {
+    let classNames = className
+    if (this.props.location.pathname === href) {
+      classNames += ` ${className}-active`
+    }
+
+    return classNames
+  }
+
   renderNavItem({ href, label }) {
+    const classNames = this.getItemClassnames(href, 'nav-item')
+
+    if (label === 'Blog') {
+      return (
+        <a href={href}
+           target="_blank"
+           className={classNames}
+           key={label}>
+          {label}
+        </a>
+      )
+    }
+
     return (
       <Link to={href}
-            className="nav-item"
+            className={classNames}
             key={label}>
         {label}
       </Link>
@@ -34,9 +57,22 @@ class Navbar extends Component {
   }
 
   renderMobileNavItem({ href, label }) {
+    const classNames = this.getItemClassnames(href, 'nav-mobile-item')
+
+    if (label === 'Blog') {
+      return (
+        <a href={href}
+           target="_blank"
+           className={classNames}
+           key={label}>
+          {label}
+        </a>
+      )
+    }
+
     return (
       <Link to={href}
-            className="nav-mobile-item"
+            className={classNames}
             key={label}>
         {label}
       </Link>
@@ -45,9 +81,9 @@ class Navbar extends Component {
 
   render() {
     const navItems = [
-      { label: 'Our Offer', href: '/' },
+      { label: 'Home', href: '/' },
       { label: 'Process', href: '/process' },
-      { label: 'Bots', href: '/bots' },
+      { label: 'Blog', href: 'https://blog.costudio.io' },
       { label: 'About', href: '/about' },
       { label: 'Contact Us', href: '/contact' },
     ]
@@ -59,26 +95,6 @@ class Navbar extends Component {
         </Link>
 
         {navItems.reverse().map(this.renderNavItem)}
-        {/* <a href="mailto:costudio.io@gmail.com"
-           className="nav-item">
-          Contact Us
-        </a> */}
-
-
-        {/* <Link to="/about"
-              className="nav-item">
-          About
-        </Link>
-
-        <Link to="/process"
-              className="nav-item">
-          Process
-        </Link>
-
-        <Link to="/"
-              className="nav-item">
-          Our Offer
-        </Link> */}
 
         <i className="nav-menu" onClick={this.toggleMobileMenu}>
           <img className="nav-menu-icon"
@@ -95,25 +111,6 @@ class Navbar extends Component {
 
           <div className="nav-mobile-items" onClick={this.toggleMobileMenu}>
             {navItems.reverse().map(this.renderMobileNavItem)}
-            {/* <Link to="/"
-                  className="nav-mobile-item">
-              Our Offer
-            </Link>
-
-            <Link to="/process"
-                  className="nav-mobile-item">
-              Process
-            </Link>
-
-            <Link to="/about"
-                  className="nav-mobile-item">
-              About
-            </Link>
-
-            <a href="mailto:costudio.io@gmail.com"
-              className="nav-mobile-item">
-              Contact Us
-            </a> */}
           </div>
         </nav>
       </nav>
