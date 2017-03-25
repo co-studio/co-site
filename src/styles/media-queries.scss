@@ -5,6 +5,7 @@
 @import '../components/IconList/IconList.scss';
 @import '../components/ContentSection/ContentSection.scss';
 @import '../components/Thumbnail/Thumbnail.scss';
+@import '../components/FormContact/FormContact.scss';
 
 @import '../pages/About/About.scss';
 @import '../pages/Process/Process.scss';
@@ -22,10 +23,11 @@
   @include offer-sm();
   @include contentSection-sm();
   @include thumbnail-sm();
+  @include FormContact-sm();
+  @include FormEmail-sm();
 
   @include about-sm();
   @include bots-sm();
-  @include contact-sm();
 }
 
 // medium screen size (md)

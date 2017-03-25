@@ -14,6 +14,9 @@ import Button from '../../components/Button/Button'
 import Hero from '../../components/Hero/Hero'
 import IconList from '../../components/IconList/IconList'
 import ContentSection from '../../components/ContentSection/ContentSection'
+import SubHeader from '../../components/SubHeader/SubHeader'
+import SubHeadline from '../../components/SubHeadline/SubHeadline'
+import FormEmail from '../../components/FormEmail/FormEmail'
 
 class Landing extends Component {
   constructor(props) {
@@ -42,21 +45,24 @@ class Landing extends Component {
       <div className="app-container">
         <Navbar location={this.props.location} />
 
-      <Hero headline="Bringing Bots to your business"
-              btnText="Get in touch">
-        Upgrade your business with a multi-platform chatbot or app
-      </Hero>
+        <Hero headline="Bringing Bots to your business">
+          <SubHeadline>
+            Upgrade your business with a multi-platform chatbot or app
+          </SubHeadline>
+
+          <FormEmail btnText="Learn More" />
+        </Hero>
 
         <IconList background="#c9c7ce"/>
 
         <section className="landing-offer">
-          <img className="illustration-offer"
-            src={offerImage}
-            alt="Our Offer" />
+          {/* <img className="illustration-offer"
+               src={offerImage}
+               alt="Our Offer" /> */}
 
-          <h2 className="landing-offer-header">
+          <SubHeader className="landing-offer-header">
             Our offer is simple
-          </h2>
+          </SubHeader>
 
           <p className="landing-offer-body">
             For <b>$10K</b> we will work with you for <b>a month</b> to design and code a chatbot that will grow your business.
@@ -68,7 +74,7 @@ class Landing extends Component {
           </Button>
         </section>
 
-        <ContentSection background="dark"
+        {/* <ContentSection background="dark"
                         textPosition={imageLocation}
                         title="1. What"
                         header="What is a chatbot?"
@@ -107,7 +113,7 @@ class Landing extends Component {
                         image={pitchFour}>
           Customers typically find chatbots through a business’s Facebook Page.
           Your chatbot can utilize your Facebook Page’s audience, which is a nascent asset for most businesses and entrepreneurs.
-        </ContentSection>
+        </ContentSection> */}
 
         <Footer />
       </div>

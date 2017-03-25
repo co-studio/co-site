@@ -26,9 +26,7 @@ class Hero extends Component {
           {headline}
         </h1>
 
-        <p className="sub-headline">
-          {children}
-        </p>
+        {children}
 
         <div className="btn-group">
           {btnText && this.renderButton(btnText)}

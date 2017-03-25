@@ -1,8 +1,5 @@
 @import '../../variables.scss';
 
-$input-active-color: $purple;
-$input-inactive-color: $gray-9;
-
 .contact-container {
   box-sizing: border-box;
   display: flex;
@@ -14,91 +11,5 @@ $input-inactive-color: $gray-9;
 }
 
 .contact-header {
-  @include subheader();
   margin-bottom: $padding-2;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  max-width: 750px;
-}
-
-.contact-input {
-  margin-top: 5px;
-  padding: $padding-1 10px;
-  font-size: $font-size-base;
-  background: $white;
-  border: none;
-  border-bottom: 4px solid;
-  border-color: $input-inactive-color;
-  outline: none;
-  transition: $hover-transition;
-
-  &:focus {
-    border-color: $input-active-color;
-  }
-}
-
-.contact-input-label {
-  display: flex;
-  flex-direction: column;
-  margin: $padding-1/2 0;
-  font-size: $font-size-label;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: $input-inactive-color;
-  transition: $hover-transition;
-
-  &:focus {
-    border-color: $input-active-color;
-  }
-}
-
-.contact-input-message {
-  resize: none;
-  height: 200px;
-}
-
-.contact-form-footer {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  margin-top: $padding-1;
-}
-
-.contact-submit-btn {
-  font-size: $font-size-label;
-}
-
-.contact-thank-you {
-  flex: 1;
-}
-
-.contact-thank-you-header {
-  @include subheader();
-  text-align: left;
-  border: none;
-}
-
-.contact-thank-you-body {
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-
-@mixin contact-sm() {
-
-  .contact-form {
-    width: 100%;
-  }
-
-  .contact-form-footer {
-    flex-direction: column;
-  }
-
-  .contact-thank-you {
-    order: 1;
-    margin-top: $padding-1;
-  }
 }

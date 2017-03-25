@@ -21,10 +21,6 @@
   width: 70%;
 }
 
-.landing-offer-header {
-  @include subheader();
-}
-
 .landing-offer-body {
   max-width: 750px;
   margin-top: $padding-1;
