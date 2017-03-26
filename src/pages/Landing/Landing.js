@@ -5,8 +5,12 @@ import pitchOne from '../../assets/images/illustrations/illustration-pitch-1.svg
 import pitchTwo from '../../assets/images/illustrations/illustration-pitch-2.svg'
 import pitchThree from '../../assets/images/illustrations/illustration-pitch-3.svg'
 import pitchFour from '../../assets/images/illustrations/illustration-pitch-4.svg'
-import offer from '../../assets/images/illustrations/illustration-offer.svg'
-import offerVertical from '../../assets/images/illustrations/illustration-offer-vertical.svg'
+import botOne from '../../assets/images/illustrations/illustration-bot-1.svg'
+import timer from '../../assets/images/illustrations/illustration-timer.svg'
+import chart from '../../assets/images/illustrations/illustration-chart.svg'
+import app from '../../assets/images/illustrations/illustration-app.svg'
+import store from '../../assets/images/illustrations/illustration-store.svg'
+import downArrow from '../../assets/icons/icon-down-arrow.svg'
 // Components
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
@@ -14,13 +18,18 @@ import Button from '../../components/Button/Button'
 import Hero from '../../components/Hero/Hero'
 import IconList from '../../components/IconList/IconList'
 import ContentSection from '../../components/ContentSection/ContentSection'
+import Header from '../../components/Header/Header'
 import SubHeader from '../../components/SubHeader/SubHeader'
 import SubHeadline from '../../components/SubHeadline/SubHeadline'
 import FormEmail from '../../components/FormEmail/FormEmail'
+import CardUseCase from '../../components/CardUseCase/CardUseCase'
 
 class Landing extends Component {
   constructor(props) {
     super(props)
+
+    this.scrollTo = this.scrollTo.bind(this)
+
     this.state = {
       windowWidth: null
     }
@@ -32,11 +41,11 @@ class Landing extends Component {
     })
   }
 
-  render() {
-    const offerImage = (this.state.windowWidth > 768)
-      ? offer
-      : offerVertical
+  scrollTo() {
+    const anchor = document.getElementById('landing-uses').scrollIntoView({ behavior: 'smooth' })
+  }
 
+  render() {
     const imageLocation = (this.state.windowWidth > 768)
       ? 'left'
       : 'right'
@@ -45,34 +54,103 @@ class Landing extends Component {
       <div className="app-container">
         <Navbar location={this.props.location} />
 
-        <Hero headline="Bringing Bots to your business">
-          <SubHeadline>
-            Upgrade your business with a multi-platform chatbot or app
+        <Hero className="Hero-landing">
+          <Header>
+            Never leave a customer unsatisfied again.
+            <br/>
+            Let your <b>chatbot</b> do the talking.
+          </Header>
+          <SubHeadline className="SubHeadline-landing">
+            Handle your customers’ every request instantly, around the clock.
+            <br/>
+            Find out how a chatbot can revolutionize your customer experience.
           </SubHeadline>
 
           <FormEmail btnText="Learn More" />
+
+          <div className="Hero-landing-arrow"
+               onClick={this.scrollTo}>
+            <label className="Hero-landing-arrow-label">
+              Keep Reading
+            </label>
+
+            <img src={downArrow}
+                 className="Hero-landing-arrow-icon"
+                 type="presentation"/>
+          </div>
         </Hero>
 
         <IconList background="#c9c7ce"/>
 
-        <section className="landing-offer">
-          {/* <img className="illustration-offer"
-               src={offerImage}
-               alt="Our Offer" /> */}
-
-          <SubHeader className="landing-offer-header">
-            Our offer is simple
+        <section className="landing-uses"
+                 id="landing-uses">
+          <SubHeader className="landing-uses-header">
+            What can a chatbot do for you?
           </SubHeader>
 
-          <p className="landing-offer-body">
-            For <b>$10K</b> we will work with you for <b>a month</b> to design and code a chatbot that will grow your business.
-          </p>
+          <div className="landing-uses-body">
+            <CardUseCase image={timer}
+                         header="Customer Support"
+                         listItems={[
+                           '24/7, real-time chat support',
+                           'Answer 80% of questions',
+                           'Automate escalation to a human'
+                         ]} />
 
-          <Button href="/contact"
-                  color="purple">
-            Get Started
-          </Button>
+            <CardUseCase image={app}
+                         header="Mobile App MVP"
+                         listItems={[
+                           'Engage 3B+ chat platform users',
+                           'Reach mobile in 70% less time',
+                           'Test your idea for 30% the price'
+                         ]} />
+
+            <CardUseCase image={botOne}
+                         header="Brand Engagement"
+                         listItems={[
+                           'Respond to 1M+ fans instantly',
+                           'Share special offers and deals',
+                           'Deliver subscription content'
+                         ]} />
+
+            <CardUseCase image={chart}
+                         header="Sales Assistant"
+                         listItems={[
+                           'Qualify potential leads',
+                           'Integrate with your CRM',
+                           'Manage accounts with ease'
+                         ]} />
+
+            <CardUseCase image={store}
+                         header="Small Business"
+                         listItems={[
+                           'Handle delivery orders',
+                           'Sell event tickets',
+                           'Send appointment reminders'
+                         ]} />
+          </div>
         </section>
+
+        <SubHeader className="landing-benefits-header">
+          What will you gain from a chatbot?
+        </SubHeader>
+
+        <ContentSection background="dark"
+                        textPosition={imageLocation}
+                        header="You'll provide better service"
+                        image={pitchOne}>
+          From immediate responses 24/7 to personalized 1-1 engagement,
+          your chatbot will improve your business’s customer experience.
+        </ContentSection>
+
+        <ContentSection background="light"
+                        textPosition="right"
+                        header="You'll reach a new market"
+                        image={pitchTwo}>
+          With more than 3B active users on chat platforms
+          (more than social media), your chatbot will help your
+          business reach a new market.
+        </ContentSection>
 
         {/* <ContentSection background="dark"
                         textPosition={imageLocation}
@@ -114,6 +192,14 @@ class Landing extends Component {
           Customers typically find chatbots through a business’s Facebook Page.
           Your chatbot can utilize your Facebook Page’s audience, which is a nascent asset for most businesses and entrepreneurs.
         </ContentSection> */}
+
+        <section className="landing-footer-cta">
+          <SubHeader>
+            Curious how a chatbot can help your business?
+          </SubHeader>
+          <FormEmail btnText="Learn More"
+                     className="FormEmail-light-background"/>
+        </section>
 
         <Footer />
       </div>

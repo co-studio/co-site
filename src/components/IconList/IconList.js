@@ -55,6 +55,9 @@ class IconList extends Component {
 
     return (
       <div className="icon-list-container" style={{ background: background }}>
+        <label className="icon-list-label">
+
+        </label>
         <span className="list-shortener">
           <div className="icon-list">
             {icons.length > 0 && icons.map(this.renderIcon)}

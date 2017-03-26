@@ -18,10 +18,10 @@ class Hero extends Component {
   }
 
   render() {
-    const { headline, children, btnText, background } = this.props
+    const { headline, children, btnText, background, className } = this.props
 
     return (
-      <section className={`headline-container headline-container-${background}`}>
+      <section className={`headline-container headline-container-${background} ${className}`}>
         <h1 className="headline">
           {headline}
         </h1>

@@ -25,6 +25,10 @@ class FormEmail extends React.Component {
       this.refs['FormEmail-input-email'],
     ]
 
+    if (inputs[0].value === '') {
+      return
+    }
+
     const buildInputStr = (ref) => `entry.${ref.id}=${ref.value}`
     const [ nameStr, emailStr, messageStr ] = inputs.map(buildInputStr)
 
@@ -46,10 +50,10 @@ class FormEmail extends React.Component {
   }
 
   render () {
-    const { btnText } = this.props
+    const { btnText, className } = this.props
 
     return (
-      <form className="FormEmail-form"
+      <form className={`FormEmail-form ${className}`}
             id="form"
             action=""
             method="POST"
@@ -66,7 +70,8 @@ class FormEmail extends React.Component {
                  placeholder={this.state.placeholder} />
 
           <img className={`FormEmail-checkmark ${this.state.checkmarkActive}`}
-               src={iconCheckmark} />
+               src={iconCheckmark}
+               role="presentation"/>
         </label>
 
         <div className="FormEmail-form-footer">

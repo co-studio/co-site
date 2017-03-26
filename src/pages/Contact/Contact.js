@@ -6,6 +6,7 @@ import Hero from '../../components/Hero/Hero'
 import IconList from '../../components/IconList/IconList'
 import SubHeader from '../../components/SubHeader/SubHeader'
 import FormContact from '../../components/FormContact/FormContact'
+import SubHeadline from '../../components/SubHeadline/SubHeadline'
 
 class Contact extends Component {
   render() {
@@ -15,7 +16,9 @@ class Contact extends Component {
 
         <Hero headline="Let's Chat"
               background="contact">
-          We are always happy to talk and will respond within a day's time.
+          <SubHeadline>
+            We are always happy to talk and will respond within a day's time.
+          </SubHeadline>
         </Hero>
 
         <IconList background="#c9c7ce"/>

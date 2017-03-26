@@ -2,9 +2,9 @@ import React, { PropTypes, Component } from 'react'
 
 class SubHeadline extends Component {
   render () {
-    const { children } = this.props
+    const { children, className } = this.props
     return (
-      <p className="SubHeadline">
+      <p className={`SubHeadline ${className}`}>
         {children}
       </p>
     )

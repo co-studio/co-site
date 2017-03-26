@@ -19,6 +19,7 @@ import Hero from '../../components/Hero/Hero'
 import IconList from '../../components/IconList/IconList'
 import ContentSection from '../../components/ContentSection/ContentSection'
 import Thumbnail from '../../components/Thumbnail/Thumbnail'
+import SubHeadline from '../../components/SubHeadline/SubHeadline'
 
 class Process extends Component {
   constructor(props) {
@@ -46,10 +47,12 @@ class Process extends Component {
       <Hero headline="Our Work"
               btnText="Get in touch"
               background="process">
+        <SubHeadline>
           We take a wholistic, business driven approach to building bots and apps.
           <br />
           All of our products are focused on delivering value to their users.
-        </Hero>
+        </SubHeadline>
+      </Hero>
 
         <IconList background="#c9c7ce"/>
 

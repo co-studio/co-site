@@ -8,6 +8,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import Hero from '../../components/Hero/Hero'
 import IconList from '../../components/IconList/IconList'
+import SubHeadline from '../../components/SubHeadline/SubHeadline'
 
 class About extends Component {
   render() {
@@ -18,8 +19,10 @@ class About extends Component {
         <Hero headline="About Us"
               btnText="Get in touch"
               background="about">
-          We are a team of entrepreneurs, creatives, and engineers <br />
-          bound together by a passion for products and people.
+          <SubHeadline>
+            We are a team of entrepreneurs, creatives, and engineers <br />
+            bound together by a passion for products and people.
+          </SubHeadline>
         </Hero>
 
         <IconList background="#c9c7ce"/>

@@ -6,6 +6,7 @@
 @import '../components/ContentSection/ContentSection.scss';
 @import '../components/Thumbnail/Thumbnail.scss';
 @import '../components/FormContact/FormContact.scss';
+@import '../components/FormEmail/FormEmail.scss';
 
 @import '../pages/About/About.scss';
 @import '../pages/Process/Process.scss';
@@ -20,12 +21,13 @@
   @include navbar-sm();
   @include footer-sm();
   @include button-sm();
-  @include offer-sm();
   @include contentSection-sm();
   @include thumbnail-sm();
   @include FormContact-sm();
   @include FormEmail-sm();
+  @include CardUseCase-sm();
 
+  @include landing-sm();
   @include about-sm();
   @include bots-sm();
 }

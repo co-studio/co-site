@@ -62,11 +62,11 @@ $font-size-subheader: 24px;
 @mixin subheader {
   margin: 0;
   text-align: center;
-  font-size: $font-size-subheader;
-  font-weight: 600;
+  font-size: $font-size-header;
+  font-weight: 100;
   color: $gray-7;
-  border-bottom: 4px solid $gray-7;
-  text-transform: uppercase;
+  // border-bottom: 4px solid $gray-7;
+  // text-transform: uppercase;
 }
 
 //

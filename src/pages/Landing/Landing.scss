@@ -7,35 +7,93 @@
   overflow-x: hidden;
 }
 
-.landing-offer {
+.Hero-landing {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.SubHeadline-landing {
+  margin: $padding-2 * .5 0;
+}
+
+.Hero-landing-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $padding-1/2;
+  padding-bottom: $padding-1/4;
+  margin: $padding-1 0;
+  position: absolute;
+  bottom: 0;
+  opacity: 0.5;
+  cursor: pointer;
+  border-radius: $border-radius;
+  transition: $hover-transition;
+
+  &:hover {
+    opacity: 1;
+    background: $gray-8;
+  }
+}
+
+.Hero-landing-arrow-label {
+  font-size: $font-size-label;
+  text-transform: uppercase;
+  color: $white;
+  cursor: pointer;
+}
+
+.Hero-landing-arrow-icon {
+  width: 24px;
+}
+
+.landing-uses {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: $padding-3 $padding-2;
+  background: $white;
+}
+
+.landing-uses-body {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.landing-footer-cta {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: $padding-3 $padding-2;
-  padding-top: $padding-1;
-  background: $white;
+  padding: $padding-3 $padding-1 $padding-4;
+  background: $gray-2;
+  background-image: url('./assets/images/background-footer-cta.svg');
+  background-size: cover;
+  background-position: bottom;
 }
 
-.illustration-offer {
-  width: 70%;
+.FormEmail-light-background {
+  background: none;
+  padding: $padding-2 0;
+
+  .FormEmail-input-label {
+    font-weight: 600;
+    color: $gray-9;
+  }
 }
 
-.landing-offer-body {
-  max-width: 750px;
-  margin-top: $padding-1;
-  margin-bottom: $padding-2;
-  text-align: center;
-  font-size: $font-size-subheader;
-}
-
-@mixin offer-sm() {
-  .landing-offer {
-    padding: $padding-2 $padding-1;
+@mixin landing-sm() {
+  .Hero-landing {
+    min-height: 900px;
   }
 
-  .illustration-offer {
-    max-height: 200vh;
-    width: 100%;
+  .landing-uses {
+    padding-left: $padding-1;
+    padding-right: $padding-1;
   }
 }
