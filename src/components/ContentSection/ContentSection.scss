@@ -13,7 +13,7 @@
   flex-wrap: wrap;
   box-sizing: border-box;
   width: 100%;
-  padding: $padding-4 $padding-1;
+  padding: $padding-3 $padding-1;
 }
 
 .content-section-dark {
@@ -24,6 +24,11 @@
 .content-section-light {
   background: $white;
   color: $black;
+}
+
+.content-section-none {
+  background: none;
+  color: $white;
 }
 
 .content-section-text-container,
@@ -71,21 +76,19 @@
 .content-section-header {
   margin-top: $padding-2;
   margin-bottom: $padding-1;
-  font-size: $font-size-header;
-  font-weight: 600;
+  font-size: $font-size-subheader;
+  font-weight: 300;
 }
 
 .content-section-body {
   margin-bottom: $padding-2;
-  font-size: $font-size-subheader;
-  font-weight: 100;
+  font-size: $font-size-base;
+  // font-weight: 100;
 }
 
-// .content-section-image {
-//   width: 100%;
-//   max-width: 512px;
-//   min-width: 384px;
-// }
+.content-section-image {
+  max-width: 384px;
+}
 
 .content-section-deliverable-light {
   color: $black;

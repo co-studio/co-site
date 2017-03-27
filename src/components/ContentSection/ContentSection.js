@@ -28,7 +28,7 @@ class ContentSection extends Component {
         <label className="content-section-label">
           Deliverable
         </label>
-
+        
         <label className={`content-section-label content-section-deliverable-${background}`}>
           {deliverable}
         </label>

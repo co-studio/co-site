@@ -9,6 +9,8 @@ import Footer from '../../components/Footer/Footer'
 import Hero from '../../components/Hero/Hero'
 import IconList from '../../components/IconList/IconList'
 import SubHeadline from '../../components/SubHeadline/SubHeadline'
+import SubHeader from '../../components/SubHeader/SubHeader'
+import FormEmail from '../../components/FormEmail/FormEmail'
 
 class About extends Component {
   render() {
@@ -17,8 +19,8 @@ class About extends Component {
         <Navbar location={this.props.location} />
 
         <Hero headline="About Us"
-              btnText="Get in touch"
-              background="about">
+          btnText="Get in touch"
+          background="about">
           <SubHeadline>
             We are a team of entrepreneurs, creatives, and engineers <br />
             bound together by a passion for products and people.
@@ -81,14 +83,20 @@ class About extends Component {
               Our political bot work was featured in <a target="_blank" href="https://news.vice.com/story/alt-right-racists-twitter-bot">VICE News</a> and <a target="_blank" href="http://mashable.com/2017/02/08/facebook-bot-trump-protests-webot">Mashable</a> for our innovations in news tech.
               <br />
               <br />
-            Today we continue to pursue our passion for building mobile products and bots at Co Studio.
+              Today we continue to pursue our passion for building mobile products and bots at Co Studio.
               We love the challenge of creating chatbots that help businesses and entrepreneurs, and pursue every project with enthusiastic energy!
             </p>
 
           </div>
-
         </section>
 
+        <section className="landing-footer-cta">
+          <SubHeader>
+            Curious how a chatbot can help your business?
+          </SubHeader>
+          <FormEmail btnText="Learn More"
+            className="FormEmail-light-background"/>
+        </section>
         <Footer />
       </div>
     )

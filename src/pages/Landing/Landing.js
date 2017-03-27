@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 
 // Illustrations
 import pitchOne from '../../assets/images/illustrations/illustration-pitch-1.svg'
-import pitchTwo from '../../assets/images/illustrations/illustration-pitch-2.svg'
-import pitchThree from '../../assets/images/illustrations/illustration-pitch-3.svg'
-import pitchFour from '../../assets/images/illustrations/illustration-pitch-4.svg'
+// import pitchThree from '../../assets/images/illustrations/illustration-pitch-3.svg'
+import processFour from '../../assets/images/illustrations/illustration-process-4.svg'
+import processTwoDark from '../../assets/images/illustrations/illustration-process-2-dark.svg'
 import botOne from '../../assets/images/illustrations/illustration-bot-1.svg'
 import timer from '../../assets/images/illustrations/illustration-timer.svg'
 import chart from '../../assets/images/illustrations/illustration-chart.svg'
@@ -20,8 +20,8 @@ import IconList from '../../components/IconList/IconList'
 import ContentSection from '../../components/ContentSection/ContentSection'
 import Header from '../../components/Header/Header'
 import SubHeader from '../../components/SubHeader/SubHeader'
-import SubHeadline from '../../components/SubHeadline/SubHeadline'
 import FormEmail from '../../components/FormEmail/FormEmail'
+import SubHeadline from '../../components/SubHeadline/SubHeadline'
 import CardUseCase from '../../components/CardUseCase/CardUseCase'
 
 class Landing extends Component {
@@ -55,28 +55,30 @@ class Landing extends Component {
         <Navbar location={this.props.location} />
 
         <Hero className="Hero-landing">
-          <Header>
-            Never leave a customer unsatisfied again.
-            <br/>
-            Let your <b>chatbot</b> do the talking.
-          </Header>
-          <SubHeadline className="SubHeadline-landing">
-            Handle your customers’ every request instantly, around the clock.
-            <br/>
-            Find out how a chatbot can revolutionize your customer experience.
-          </SubHeadline>
+          <div className="Hero-landing-headline">
+            <Header>
+              Never leave a customer unsatisfied again.
+              <br/>
+              Let your <b>chatbot</b> do the talking.
+            </Header>
+            <SubHeadline className="SubHeadline-landing">
+              Handle your customers’ every request instantly, around the clock.
+              <br/>
+              Find out how a chatbot can revolutionize your customer experience.
+            </SubHeadline>
 
-          <FormEmail btnText="Learn More" />
+            <FormEmail btnText="Learn More" />
+          </div>
 
           <div className="Hero-landing-arrow"
-               onClick={this.scrollTo}>
+            onClick={this.scrollTo}>
             <label className="Hero-landing-arrow-label">
               Keep Reading
             </label>
 
             <img src={downArrow}
-                 className="Hero-landing-arrow-icon"
-                 type="presentation"/>
+              className="Hero-landing-arrow-icon"
+              type="presentation"/>
           </div>
         </Hero>
 
@@ -131,67 +133,32 @@ class Landing extends Component {
           </div>
         </section>
 
-        <SubHeader className="landing-benefits-header">
-          What will you gain from a chatbot?
-        </SubHeader>
+        <section className="landing-content">
+          <ContentSection background="dark"
+                          textPosition={imageLocation}
+                          header="You'll provide better service"
+                          image={processTwoDark}>
+            From immediate responses 24/7 to personalized 1-1 engagement,
+            your chatbot will improve your business’s customer experience.
+          </ContentSection>
 
-        <ContentSection background="dark"
-                        textPosition={imageLocation}
-                        header="You'll provide better service"
-                        image={pitchOne}>
-          From immediate responses 24/7 to personalized 1-1 engagement,
-          your chatbot will improve your business’s customer experience.
-        </ContentSection>
+          <ContentSection background="light"
+                          textPosition="right"
+                          header="You'll reach a new market"
+                          image={processFour}>
+            With more than 3B active users on chat platforms
+            (more than social media), your chatbot will help your
+            business reach a new market.
+          </ContentSection>
 
-        <ContentSection background="light"
-                        textPosition="right"
-                        header="You'll reach a new market"
-                        image={pitchTwo}>
-          With more than 3B active users on chat platforms
-          (more than social media), your chatbot will help your
-          business reach a new market.
-        </ContentSection>
-
-        {/* <ContentSection background="dark"
-                        textPosition={imageLocation}
-                        title="1. What"
-                        header="What is a chatbot?"
-                        image={pitchOne}
-                        button="Learn More">
-          Chatbots automate conversations and tasks.
-          They can be used to answer support questions, provide directions to a store location, or order a pizza, among many other things.
-          Often times chatbots provide functionality similar to a mobile app.
-        </ContentSection>
-
-        <ContentSection background="light"
-                        textPosition="right"
-                        title="2. Time"
-                        header="How long will it take to build my chatbot?"
-                        image={pitchTwo}
-                        button="Let's Talk">
-          In <b>only 1 month</b> you can have a chatbot built, tested, and integrated into your business.
-          This tight timeline allows you to reach the mobile market quickly and cut costs.
-        </ContentSection>
-
-        <ContentSection background="dark"
-                        textPosition={imageLocation}
-                        title="3. Cost"
-                        header="How much will my chatbot cost?"
-                        button="Start Building"
-                        image={pitchThree}>
-          For <b>only $10k</b> you can build a custom chatbot for your business or idea.
-          With the help of our proprietary software and industry expertise we are capable of building bots in an economic fashion.
-        </ContentSection>
-
-        <ContentSection background="light"
-                        textPosition="right"
-                        title="4. Discovery"
-                        header="How will customers find my chatbot?"
-                        button="Get Started"
-                        image={pitchFour}>
-          Customers typically find chatbots through a business’s Facebook Page.
-          Your chatbot can utilize your Facebook Page’s audience, which is a nascent asset for most businesses and entrepreneurs.
-        </ContentSection> */}
+          <ContentSection background="dark"
+                          textPosition={imageLocation}
+                          header="You'll generate revenue"
+                          image={pitchOne}>
+            From less overhead for your team to improved customer retention,
+            your chatbot will generate revenue in a variety of ways.
+          </ContentSection>
+        </section>
 
         <section className="landing-footer-cta">
           <SubHeader>
