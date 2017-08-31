@@ -185,7 +185,7 @@ class App extends Component {
 
             <div style={{ width: '100%', display: 'flex' }}>
               <div style={{ display: 'flex', flexDirection: 'column', width: '40%' }}>
-                <ImageLink src={tbs} http="http://www.tbs.com/shows/people-of-earth" />
+                <ImageLink src={tbs} href="http://www.tbs.com/shows/people-of-earth" />
                 <ImageLink src={coServices1} />
                 <PortfolioTile />
               </div>
