@@ -9,7 +9,11 @@ const Link = glamorous.a({
   display: 'block',
   padding: '8px',
   lineHeight: '0',
-  cursor: 'pointer'
+  cursor: 'pointer',
+
+  '@media(max-width: 1023px)': {
+    padding: '2px',
+  }
 });
 
 const Image = glamorous.img({

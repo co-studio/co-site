@@ -13,5 +13,9 @@ export default glamorous.a({
   ':hover': {
     color: colors.white,
     borderColor: colors.white,
+  },
+
+  '@media(max-width: 1023px)': {
+    fontSize: '6vw'
   }
 });

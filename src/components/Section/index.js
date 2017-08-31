@@ -11,6 +11,10 @@ export default glamorous.section(
     width: '100%',
     padding: spacing.medium,
     zIndex: 1,
+
+    '@media(max-width: 1023px)': {
+      padding: spacing.small,
+    }
   },
   ({ color }) => ({ backgroundColor: color })
 );

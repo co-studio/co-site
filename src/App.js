@@ -48,6 +48,22 @@ const AppContainer = glamorous.div({
   padding: '48px',
   marginBottom: '0',
   overflow: 'hidden',
+
+  '@media(max-width: 1023px)': {
+    padding: '12px'
+  }
+});
+
+const CoVerticalContainer = glamorous.div({
+  width: '40%',
+  '@media(max-width: 1023px)': { width: '10%' }
+});
+
+const PortfolioTile = glamorous.div({
+  height: '100%',
+  background: colors.grayLight,
+  margin: '8px',
+  '@media(max-width: 1023px)': { margin: '2px' }
 });
 
 class App extends Component {
@@ -62,14 +78,16 @@ class App extends Component {
           >
             <Image src={mail} css={{ width: '32px', height: '32px' }} />
           </Link>
-          {/* CO STUDIO */}
         </Navbar>
 
         <SectionFixed color={colors.black}>
-          <Content css={{ display: 'flex', marginTop: '64px', marginBottom: 0, width: '70vw' }}>
+          <Content css={{ display: 'flex', marginTop: '64px', marginBottom: 0, width: '72vw' }}>
             <div style={{ flex: '1', marginRight: '10%' }}>
               <img src={headline} style={{ width: '100%' }} />
-              <Text css={{ color: colors.purple, marginTop: '48px' }}>
+              <Text css={{
+                color: colors.purple, marginTop: '48px',
+                '@media(max-width: 1023px)': { fontSize: '4.75vw' }
+              }}>
                 That’s where Co comes in. <br/>
                 We can bring your app to life on <i>web</i>, <i>mobile</i>,
                 or <i>chat</i> with <i>code</i> and <i>design</i>.
@@ -77,7 +95,10 @@ class App extends Component {
               <div style={{ display: 'flex' }}>
                 <Link
                   href="mailto:team@costudio.io"
-                  css={{ width: '50%', marginRight: '12px' }}
+                  css={{
+                    width: '50%', marginRight: '12px',
+                    '@media(max-width: 1023px)': { width: '100%' }
+                  }}
                 >
                   <Button>
                     Get In Touch
@@ -90,9 +111,9 @@ class App extends Component {
                 </Link> */}
               </div>
             </div>
-            <div style={{ width: '40%' }}>
+            <CoVerticalContainer>
               <img src={co} style={{ width: '125%' }} />
-            </div>
+            </CoVerticalContainer>
           </Content>
         </SectionFixed>
 
@@ -153,60 +174,64 @@ class App extends Component {
               for web, mobile and chat.
               Here are some of the products we’ve taken from idea to market.
               <br/>
-              <span style={{ fontSize: '14px' }}>
+              <span style={{ fontSize: '14px', lineHeight: '1' }}>
                 By the way, startups created by Co Studio are labeled with <i>CREATED BY CO</i>.
               </span>
             </div>
 
             <div style={{ width: '100%' }}>
-              <ImageLink src={corros} />
+              <ImageLink src={corros} href="http://corros.io" />
             </div>
 
             <div style={{ width: '100%', display: 'flex' }}>
-              <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <ImageLink src={tbs} />
+              <div style={{ display: 'flex', flexDirection: 'column', width: '40%' }}>
+                <ImageLink src={tbs} http="http://www.tbs.com/shows/people-of-earth" />
                 <ImageLink src={coServices1} />
-                <div style={{ height: '100%', background: colors.grayLight, margin: '8px' }} />
+                <PortfolioTile />
               </div>
 
               <div style={{ width: '100%' }}>
-                <ImageLink src={lrn} />
+                <ImageLink src={lrn} href="https://thenextweb.com/apps/2015/07/28/want-a-javascript-joke-i-will-callback-later/" />
               </div>
             </div>
 
             <div style={{ width: '100%' }}>
-              <ImageLink src={dattoCommunity} />
+              <ImageLink src={dattoCommunity} href="http://datto.com" />
             </div>
 
             <div style={{ width: '100%', display: 'flex' }}>
               <div style={{ width: '100%' }}>
-                <ImageLink src={update} />
+                <ImageLink src={update} href="https://m.me/theupdateapp" />
               </div>
 
-              <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <ImageLink src={fanduel} />
+              <div style={{ display: 'flex', flexDirection: 'column', width: '40%' }}>
+                <ImageLink src={fanduel} href="https://www.fanduel.com/" />
                 <ImageLink src={coServices2} />
-                <ImageLink src={webot} css={{ display: 'flex', justifyContent: 'center' }} />
-                <div style={{ height: '100%', background: colors.grayLight, margin: '8px' }} />
+                <ImageLink
+                  src={webot}
+                  css={{ display: 'flex', justifyContent: 'center' }}
+                  href="http://mashable.com/2017/02/08/facebook-bot-trump-protests-webot"
+                />
+                <PortfolioTile />
               </div>
             </div>
 
             <div style={{ width: '100%' }}>
-              <ImageLink src={cafe} />
+              <ImageLink src={cafe} href="https://www.cafe.com/" />
             </div>
 
             <div style={{ width: '100%', display: 'flex' }}>
               <div style={{ width: '100%' }}>
-                <ImageLink src={coffee} />
+                <ImageLink src={coffee} href="https://www.bostonglobe.com/business/2014/09/12/new-app-makes-job-hunting-social-experience/0a0GHZxxRjPscJaRmgdc3O/story.html" />
               </div>
 
               <div style={{ width: '100%' }}>
-                <ImageLink src={dattoStyleguide} />
+                <ImageLink src={dattoStyleguide} href="http://datto.com" />
               </div>
             </div>
 
             <div style={{ width: '100%' }}>
-              <ImageLink src={wewalktogether} />
+              <ImageLink src={wewalktogether} href="https://wewalktogether.org" />
             </div>
 
           </Content>
@@ -248,7 +273,7 @@ class App extends Component {
               >
                 shoot us an email
               </Link> describing yourself and your needs,
-              and we will be off to the races together in no time.
+              and we will be off to the races in no time.
               <br/>
               <span style={{ fontSize: '14px' }}>
                 Thanks for stopping by!
@@ -258,15 +283,21 @@ class App extends Component {
         </Section>
 
         <Footer>
-          <Text css={{ fontSize: '12px', float: 'left', textTransform: 'uppercase', margin: '0' }}>
+          <Text css={{ fontSize: '12px', float: 'left', textTransform: 'uppercase', margin: '0', ...mobileFooterText } }>
             Co Studio
           </Text>
-          <Text css={{ fontSize: '12px', float: 'right', textTransform: 'uppercase', margin: '0' }}>
+          <Text css={{ fontSize: '12px', float: 'right', textTransform: 'uppercase', margin: '0', ...mobileFooterText } }>
             Brooklyn, NY
           </Text>
         </Footer>
       </AppContainer>
     );
+  }
+}
+
+const mobileFooterText = {
+  '@media(max-width: 1023px)': {
+    fontSize: '10px'
   }
 }
 

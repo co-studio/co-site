@@ -11,6 +11,10 @@ const Container = glamorous.div({
   margin: `${spacing.xsmall} 0`,
   padding: `0 ${spacing.xsmall}`,
   position: 'relative',
+
+  '@media(max-width: 1023px)': {
+    width: '50%'
+  }
 });
 
 const Image = glamorous.img({

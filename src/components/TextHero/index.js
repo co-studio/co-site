@@ -14,4 +14,8 @@ export default glamorous.h1({
   lineHeight: '1',
   letterSpacing: '1px',
   textTransform: 'uppercase',
+
+  '@media(max-width: 1023px)': {
+    fontSize: '20vw'
+  }
 });

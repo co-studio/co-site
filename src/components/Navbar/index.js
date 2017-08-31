@@ -12,4 +12,8 @@ export default glamorous.nav({
   width: '100%',
   padding: `48px 72px`,
   zIndex: 2,
+
+  '@media(max-width: 1023px)': {
+    padding: `24px 24px`,
+  }
 });
