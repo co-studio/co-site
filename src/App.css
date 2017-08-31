@@ -1,0 +1,7 @@
+.App {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 24px;
+  margin-bottom: 0;
+  overflow: hidden;
+}
