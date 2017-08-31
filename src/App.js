@@ -141,13 +141,13 @@ class App extends Component {
               </Link>,&nbsp;
               <Link
                 target="_blank"
-                href="https://www.bostonglobe.com/business/2014/09/12/new-app-makes-job-hunting-social-experience/0a0GHZxxRjPscJaRmgdc3O/story.html"
+                href="http://www.businessinsider.com/lrn-coding-app-2015-7"
               >
                 Business Insider
               </Link>,&nbsp;
               <Link
                 target="_blank"
-                href="http://www.businessinsider.com/lrn-coding-app-2015-7"
+                href="https://www.bostonglobe.com/business/2014/09/12/new-app-makes-job-hunting-social-experience/0a0GHZxxRjPscJaRmgdc3O/story.html"
               >
                 Boston Globe
               </Link>,&nbsp;
