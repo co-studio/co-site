@@ -9,6 +9,19 @@ const SECONDARY = {
   color: colors.purple
 };
 
+const BLACK = {
+  marginTop: spacing.regular,
+  background: colors.black,
+  borderColor: colors.black,
+  color: colors.purple,
+
+  ':hover': {
+    background: 'transparent',
+    borderColor: colors.black,
+    color: colors.black
+  }
+};
+
 export default glamorous.button(
   {
     width: '100%',
@@ -22,18 +35,19 @@ export default glamorous.button(
     borderRadius: '4px',
     borderStyle: 'none',
     outline: 'none',
-    border: `2px solid ${colors.purple}`,
+    border: `3px solid ${colors.purple}`,
     transition: 'all 0.1s cubic-bezier(0, 0, .7, 1)',
     cursor: 'pointer',
 
     ':hover': {
       background: 'transparent',
-      borderColor: 'transparent',
-      borderBottom: `2px solid ${colors.purple}`,
       color: colors.purple
     }
   },
   ({ secondary }) => (
     secondary ? SECONDARY : null
+  ),
+  ({ black }) => (
+    black ? BLACK : null
   ),
 );

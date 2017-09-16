@@ -40,6 +40,7 @@ import Image from './components/Image';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import TeamImage from './components/TeamImage';
+import Form from './components/Form';
 
 const AppContainer = glamorous.div({
   background: colors.black,
@@ -55,7 +56,7 @@ const AppContainer = glamorous.div({
 });
 
 const CoVerticalContainer = glamorous.div({
-  width: '40%',
+  width: '45%',
   '@media(max-width: 1023px)': { width: '10%' }
 });
 
@@ -111,8 +112,10 @@ class App extends Component {
                 </Link> */}
               </div>
             </div>
+
             <CoVerticalContainer>
-              <img src={co} style={{ width: '125%' }} />
+              <Form />
+              {/* <img src={co} style={{ width: '125%' }} /> */}
             </CoVerticalContainer>
           </Content>
         </SectionFixed>
