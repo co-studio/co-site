@@ -80,9 +80,9 @@ class App extends Component {
             <Image src={mail} css={{ width: '32px', height: '32px' }} />
           </Link>
         </Navbar>
-
+        
         <SectionFixed color={colors.black}>
-          <Content css={{ display: 'flex', marginTop: '64px', marginBottom: 0, width: '72vw' }}>
+          <Content css={{ display: 'flex', marginTop: '0', marginBottom: 0, width: '72vw' }}>
             <div style={{ flex: '1', marginRight: '10%' }}>
               <img src={headline} style={{ width: '100%' }} />
               <Text css={{

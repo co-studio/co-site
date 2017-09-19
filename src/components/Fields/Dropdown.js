@@ -13,10 +13,11 @@ const Option = glamorous.option({
   color: colors.black,
 });
 
-const renderOption = ({ value, label }, index) => (
+const renderOption = ({ value, label, onChange }, index) => (
   <Option
     value={value}
     key={index}
+    onChange={onChange}
   >
     {label}
   </Option>

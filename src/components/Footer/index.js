@@ -10,7 +10,7 @@ export default glamorous.nav({
   bottom: 0,
   left: 0,
   width: '100%',
-  padding: `48px 72px`,
+  padding: `0 72px 12px`,
   zIndex: 2,
 
   '@media(max-width: 1023px)': {
