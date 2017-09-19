@@ -17,7 +17,6 @@ const renderOption = ({ value, label, onChange }, index) => (
   <Option
     value={value}
     key={index}
-    onChange={onChange}
   >
     {label}
   </Option>
@@ -28,10 +27,14 @@ const Select = glamorous.select({
   marginTop: '4px',
   fontFamily: typography.fontFamily,
   fontSize: typography.fontSize.xxsmall,
+  padding: spacing.small,
   color: colors.black,
   outline: 'none',
   borderRadius: '2px',
   background: colors.white,
+  '@media(max-width: 1023px)': {
+    fontSize: '18px'
+  }
 });
 
 export default ({ options, ...props }) => (

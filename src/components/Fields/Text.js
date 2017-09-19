@@ -13,5 +13,8 @@ export default glamorous.input({
   fontSize: typography.fontSize.xxsmall,
   fontFamily: typography.fontFamily,
   borderRadius: '2px',
-  border: 'none'
+  border: 'none',
+  '@media(max-width: 1023px)': {
+    fontSize: '18px'
+  }
 });

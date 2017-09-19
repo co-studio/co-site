@@ -22,7 +22,26 @@ const FormContainer = glamorous.form({
   padding: spacing.regular,
   background: colors.purple,
   borderRadius: '4px',
+  '@media(max-width: 1023px)': {
+    fontSize: '18px'
+  }
 });
+
+const Headline = glamorous.span({
+  textTransform: 'uppercase',
+  fontSize: typography.fontSize.regular,
+  '@media(max-width: 1023px)': {
+    fontSize: '24px'
+  }
+});
+
+const SubHeadline = glamorous.span({
+  fontSize: typography.fontSize.xxsmall,
+  marginTop: '-12px',
+  '@media(max-width: 1023px)': {
+    fontSize: '14px'
+  }
+})
 
 class Form extends React.Component {
 
@@ -71,13 +90,13 @@ class Form extends React.Component {
         target="no-target">
 
         <Text css={{ margin: 0, lineHeight: 1 }}>
-          <span style={{ textTransform: 'uppercase', fontSize: typography.fontSize.regular }}>
+          <Headline>
             Contact Us
-          </span>
+          </Headline>
           <br />
-          <span style={{ fontSize: typography.fontSize.xxsmall, marginTop: '-12px' }}>
+          <SubHeadline>
             (we probably won’t bite)
-          </span>
+          </SubHeadline>
         </Text>
 
         <Label>

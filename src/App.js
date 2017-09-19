@@ -57,7 +57,7 @@ const AppContainer = glamorous.div({
 
 const CoVerticalContainer = glamorous.div({
   width: '45%',
-  '@media(max-width: 1023px)': { width: '10%' }
+  '@media(max-width: 1023px)': { width: '100%' }
 });
 
 const PortfolioTile = glamorous.div({
@@ -66,6 +66,49 @@ const PortfolioTile = glamorous.div({
   margin: '8px',
   '@media(max-width: 1023px)': { margin: '2px' }
 });
+
+const ContentFixed = glamorous(Content)({
+  display: 'flex',
+  marginTop: '0',
+  marginBottom: 0,
+  width: '72vw',
+  '@media(max-width: 1023px)': {
+    flexDirection: 'column',
+    marginTop: '64px',
+    width: '100%',
+  }
+});
+
+const mobileFormStyles = {
+  '@media(max-width: 1023px)': {
+    width: '100%',
+    marginTop: '48px'
+  }
+};
+
+const mobileFixedStyles = {
+  '@media(max-width: 1023px)': {
+    position: 'relative',
+    marginRight: 0,
+    width: '100%',
+  }
+};
+
+const SecondSection = glamorous(Section)({
+  marginTop: '92vh',
+  '@media(max-width: 1023px)': {
+    marginTop: '100vh'
+  }
+});
+
+const TextWrapper = glamorous.div({
+  flex: '1',
+  marginRight: '10%',
+  '@media(max-width: 1023px)': {
+    fontSize: '4.75vw',
+    marginRight: 0
+  }
+})
 
 class App extends Component {
   render() {
@@ -80,10 +123,10 @@ class App extends Component {
             <Image src={mail} css={{ width: '32px', height: '32px' }} />
           </Link>
         </Navbar>
-        
-        <SectionFixed color={colors.black}>
-          <Content css={{ display: 'flex', marginTop: '0', marginBottom: 0, width: '72vw' }}>
-            <div style={{ flex: '1', marginRight: '10%' }}>
+
+        <SectionFixed color={colors.black} css={mobileFixedStyles}>
+          <ContentFixed>
+            <TextWrapper>
               <img src={headline} style={{ width: '100%' }} />
               <Text css={{
                 color: colors.purple, marginTop: '48px',
@@ -97,7 +140,7 @@ class App extends Component {
                 <Link
                   href="mailto:team@costudio.io"
                   css={{
-                    width: '50%', marginRight: '12px',
+                    width: '50%',
                     '@media(max-width: 1023px)': { width: '100%' }
                   }}
                 >
@@ -105,24 +148,18 @@ class App extends Component {
                     Get In Touch
                   </Button>
                 </Link>
-                {/* <Link href="#contact" css={{ width: '50%' }}>
-                  <Button secondary>
-                  Learn More
-                  </Button>
-                </Link> */}
               </div>
-            </div>
+            </TextWrapper>
 
-            <CoVerticalContainer>
+            <CoVerticalContainer css={mobileFormStyles}>
               <Form />
               {/* <img src={co} style={{ width: '125%' }} /> */}
             </CoVerticalContainer>
-          </Content>
+          </ContentFixed>
         </SectionFixed>
 
-        <Section
+        <SecondSection
           color={colors.purple}
-          css={{ marginTop: '92vh' }}
         >
           <Content>
             <TextHero>
@@ -162,7 +199,7 @@ class App extends Component {
               </Link>.
             </div>
           </Content>
-        </Section>
+        </SecondSection>
 
         <Section
           color={colors.white}
